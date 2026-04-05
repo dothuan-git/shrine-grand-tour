@@ -1,7 +1,7 @@
 {
   "headers": [
     {
-      "source": "/shrines_v2.json",
+      "source": "/shrines_data.json",
       "headers": [
         {
           "key": "Cache-Control",

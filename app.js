@@ -7,7 +7,7 @@ function getPrefecture(place) {
     return parts.length > 1 ? parts[1] : parts[0];
 }
 
-fetch('shrines_v2.json')
+fetch('shrines_data.json')
     .then(r => r.json())
     .then(raw => {
         shrines = raw;
@@ -15,7 +15,7 @@ fetch('shrines_v2.json')
         render();
     })
     .catch(err => {
-        console.error('Failed to load shrines_v2.json:', err);
+        console.error('Failed to load shrines_data.json:', err);
         document.getElementById('results-list').innerHTML = '<div style="padding: 2rem; color: red;">Failed to load data. Make sure you\'re running this via a local server (VS Code Live Server or npx serve), not directly via file://</div>';
     });
 

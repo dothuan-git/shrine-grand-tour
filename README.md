@@ -9,7 +9,7 @@ An archival guide to Japan's sacred shrines and temples. Explore 102 shrines thr
 - **Prefecture filtering** (dynamic list based on region)
 - **Shrine type classification** (Sohonsha, Major, Notable, Complex, Temple)
 - **Responsive design** — optimized for 2K displays and mobile
-- **Searchable data** — easily update shrine information in `shrines_v2.json`
+- **Searchable data** — easily update shrine information in `shrines_data.json`
 
 ## Project Structure
 
@@ -18,7 +18,7 @@ shrine-grand-tour/
 ├── index.html           # Main HTML entry point
 ├── style.css            # All styling (design tokens, responsive layout)
 ├── app.js               # JavaScript app logic (data fetching, filtering, rendering)
-├── shrines_v2.json      # Shrine data (102 entries, easily updatable)
+├── shrines_data.json      # Shrine data (102 entries, easily updatable)
 ├── vercel.json          # Vercel deployment config (caching headers)
 └── README.md
 ```
@@ -44,7 +44,7 @@ npx serve --listen 3000
 
 ## Updating Shrine Data
 
-Edit `shrines_v2.json` directly. Each shrine entry has these fields:
+Edit `shrines_data.json` directly. Each shrine entry has these fields:
 
 ```json
 {
@@ -89,12 +89,12 @@ vercel
 ```
 
 The project deploys as a static site with zero build steps. `vercel.json` configures optimal caching:
-- **shrines_v2.json**: 1-day cache + 7-day stale-while-revalidate (large file, occasionally updated)
+- **shrines_data.json**: 1-day cache + 7-day stale-while-revalidate (large file, occasionally updated)
 - **CSS/JS**: 1-year immutable cache (purged on each deploy)
 
 ### Other Hosts
 
-Works on any static file host (GitHub Pages, Netlify, etc.). Just ensure all three files (`index.html`, `style.css`, `app.js`, `shrines_v2.json`) are deployed to the same directory.
+Works on any static file host (GitHub Pages, Netlify, etc.). Just ensure all three files (`index.html`, `style.css`, `app.js`, `shrines_data.json`) are deployed to the same directory.
 
 ## Browser Support
 
