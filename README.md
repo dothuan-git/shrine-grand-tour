@@ -23,6 +23,12 @@ shrine-grand-tour/
 └── README.md
 ```
 
+## Live Demo
+
+Visit the live site: **[https://shrine-grand-tour.vercel.app/](https://shrine-grand-tour.vercel.app/)**
+
+The app is deployed on Vercel with automatic deployments on every git push to the main branch.
+
 ## Local Development
 
 ### Prerequisites
@@ -76,25 +82,9 @@ After editing, save and refresh your browser — the app will fetch the updated 
 
 ## Deployment
 
-### Vercel (Recommended)
-
-```bash
-# Install Vercel CLI
-npm i -g vercel
-
-# Deploy
-vercel
-
-# Or connect your GitHub repo to Vercel for automatic deploys on git push
-```
-
-The project deploys as a static site with zero build steps. `vercel.json` configures optimal caching:
+The project is deployed on Vercel and automatically updates on every push to the main branch. The deployment is configured with optimal caching via `vercel.json`:
 - **shrines_data.json**: 1-day cache + 7-day stale-while-revalidate (large file, occasionally updated)
 - **CSS/JS**: 1-year immutable cache (purged on each deploy)
-
-### Other Hosts
-
-Works on any static file host (GitHub Pages, Netlify, etc.). Just ensure all three files (`index.html`, `style.css`, `app.js`, `shrines_data.json`) are deployed to the same directory.
 
 ## Browser Support
 
