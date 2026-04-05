@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jinja-Meguri | Grand Shrine Guide</title>
+    <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,wght@0,400;0,700;1,400&family=Inter:wght@300;400;600&family=Noto+Serif+JP:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <span class="kamon">⛩</span>
+    <div class="subtitle">神社参拝案内</div>
+    <h1>The Grand Shrine Tour</h1>
+    <p style="color: var(--muted); max-width: 600px; margin: 0 auto; font-size: 1rem;">
+        An archival guide to the sacred landscapes of Japan. Explore 102 shrines through historical lore and regional significance.
+    </p>
+</header>
+
+<section class="search-container">
+    <div class="filter-bar">
+        <input type="text" id="sq" placeholder="Search deity, shrine, or history..." oninput="render()">
+
+        <div class="filter-group">
+            <select id="rf" onchange="updatePrefectures(); render();">
+                <option value="">All Regions</option>
+                <option value="hokkaido">Hokkaido</option>
+                <option value="tohoku">Tohoku</option>
+                <option value="kanto">Kanto</option>
+                <option value="chubu">Chubu</option>
+                <option value="kansai">Kansai</option>
+                <option value="chugoku">Chugoku</option>
+                <option value="shikoku">Shikoku</option>
+                <option value="kyushu">Kyushu</option>
+                <option value="okinawa">Okinawa</option>
+            </select>
+        </div>
+
+        <div class="filter-group">
+            <select id="pf" onchange="render()">
+                <option value="">All Prefectures</option>
+            </select>
+        </div>
+
+        <div class="filter-group">
+            <select id="tf" onchange="render()">
+                <option value="">All Types</option>
+                <option value="Sohonsha">Sohonsha</option>
+                <option value="Complex">Complex</option>
+                <option value="Major">Major</option>
+                <option value="Notable">Notable</option>
+                <option value="Temple">Temple</option>
+            </select>
+        </div>
+
+        <span class="stats-badge" id="counter">0 Shrines</span>
+    </div>
+</section>
+
+<main class="list-container">
+    <div class="list-header">
+        <span>#</span>
+        <span>Deity</span>
+        <span>Shrine</span>
+        <span>Notes</span>
+        <span>Lore</span>
+        <span>Type</span>
+    </div>
+    <div id="results-list"></div>
+</main>
+
+<footer>
+    &copy; 2026 Grand Shrine Tour of Japan · High-Resolution Digital Archive
+</footer>
+
+<script src="app.js" defer></script>
+</body>
+</html>
