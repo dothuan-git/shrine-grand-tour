@@ -56,7 +56,7 @@ function render() {
 
     const filtered = shrines.filter(r => {
         const prefName = getPrefecture(r.place);
-        const matchSearch = [r.deity, r.shrine, r.place, r.why_visit, r.deity_lore, r.shrine_lore, r.best_time_to_visit].some(f => f && f.toLowerCase().includes(query));
+        const matchSearch = [r.deity, r.shrine, r.place, r.why_visit, r.deity_lore, r.shrine_lore, r.prayer_focus, r.best_time_to_visit].some(f => f && f.toLowerCase().includes(query));
         const matchRegion = !region || r.region === region;
         const matchPref = !prefecture || prefName === prefecture;
         const matchType = !type || r.type === type;
@@ -84,6 +84,7 @@ function render() {
             <div class="note-box">
                 <strong>Shrine Notes</strong>
                 ${highlight(r.why_visit, query)}
+                ${r.prayer_focus ? `<strong style="margin-top:1rem; display:block;">Prayer Focus</strong>${highlight(r.prayer_focus, query)}` : ''}
                 ${r.best_time_to_visit ? `<strong style="margin-top:1rem; display:block;">Best Time to Visit</strong>${highlight(r.best_time_to_visit, query)}` : ''}
             </div>
 
