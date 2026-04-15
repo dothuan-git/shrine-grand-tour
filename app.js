@@ -99,9 +99,9 @@ function render() {
                 ${hiddenMatch ? `<span class="match-badge">+ details match</span>` : ''}
             </div>
 
-            <div class="prayer-col">${r.prayer_focus ? highlight(r.prayer_focus, query) : '<span class="muted-dash">—</span>'}</div>
+            <div class="prayer-col"><span class="col-label">Prayer Focus</span>${r.prayer_focus ? highlight(r.prayer_focus, query) : '<span class="muted-dash">—</span>'}</div>
 
-            <div class="time-col">${r.best_time_to_visit ? highlight(r.best_time_to_visit, query) : '<span class="muted-dash">—</span>'}</div>
+            <div class="time-col"><span class="col-label">Best Time to Visit</span>${r.best_time_to_visit ? highlight(r.best_time_to_visit, query) : '<span class="muted-dash">—</span>'}</div>
 
             <div class="type-pill ${getTypeClass(r.type)}">${r.type}</div>
         </div>`;
