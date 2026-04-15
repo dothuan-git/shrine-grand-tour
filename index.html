@@ -64,12 +64,19 @@
         <span>#</span>
         <span>Deity</span>
         <span>Shrine</span>
-        <span>Notes</span>
-        <span>Lore</span>
+        <span>Prayer Focus</span>
+        <span>Best Time</span>
         <span>Type</span>
     </div>
     <div id="results-list"></div>
 </main>
+
+<div id="detail-overlay" class="detail-overlay" onclick="closePanel()"></div>
+<aside id="detail-panel" class="detail-panel" role="complementary" aria-label="Shrine details">
+    <span class="detail-handle"></span>
+    <button class="detail-close" onclick="closePanel()" aria-label="Close">&#x2715;</button>
+    <div id="detail-content"></div>
+</aside>
 
 <footer>
     &copy; 2026 Grand Shrine Tour of Japan · High-Resolution Digital Archive
