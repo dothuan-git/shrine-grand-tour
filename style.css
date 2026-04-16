@@ -15,6 +15,24 @@
 
 html { scroll-behavior: smooth; }
 
+/* --- Keyframes --- */
+@keyframes fadeUp {
+    from { opacity: 0; transform: translateY(14px); }
+    to   { opacity: 1; transform: translateY(0); }
+}
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+@keyframes cardIn {
+    from { opacity: 0; transform: translateY(6px); }
+    to   { opacity: 1; transform: translateY(0); }
+}
+@keyframes panelFadeIn {
+    from { opacity: 0; transform: translateY(6px); }
+    to   { opacity: 1; transform: translateY(0); }
+}
+
 body {
     background-color: var(--bg);
     color: var(--ink);
@@ -35,6 +53,7 @@ header {
     color: var(--torii-red);
     margin-bottom: 1rem;
     display: block;
+    animation: fadeUp 0.7s cubic-bezier(0.16, 1, 0.3, 1) both;
 }
 
 h1 {
@@ -44,6 +63,7 @@ h1 {
     letter-spacing: -0.02em;
     margin-bottom: 0.5rem;
     text-transform: uppercase;
+    animation: fadeUp 0.7s 0.2s cubic-bezier(0.16, 1, 0.3, 1) both;
 }
 
 .subtitle {
@@ -52,6 +72,7 @@ h1 {
     color: var(--muted);
     font-size: 0.9rem;
     margin-bottom: 2rem;
+    animation: fadeUp 0.7s 0.1s cubic-bezier(0.16, 1, 0.3, 1) both;
 }
 
 /* --- Updated Controls for 2K Screens --- */
@@ -59,6 +80,7 @@ h1 {
     max-width: var(--max-width);
     margin: 0 auto 3rem;
     padding: 0 2rem;
+    animation: fadeUp 0.7s 0.35s cubic-bezier(0.16, 1, 0.3, 1) both;
 }
 
 .filter-bar {
@@ -96,7 +118,10 @@ h1 {
     font-size: 0.85rem;
     cursor: pointer;
     min-width: 140px;
+    transition: border-color 0.2s, box-shadow 0.2s;
+    outline: none;
 }
+.filter-bar select:focus { border-color: var(--gold); box-shadow: 0 0 0 3px rgba(175, 141, 50, 0.1); }
 
 .stats-badge {
     margin-left: auto;
@@ -137,13 +162,16 @@ h1 {
     padding: 2.5rem 1.5rem;
     background: var(--surface);
     border-bottom: 1px solid var(--border);
-    transition: background 0.2s;
+    transition: background 0.2s, transform 0.2s cubic-bezier(0.16, 1, 0.3, 1);
     align-items: start;
 }
 
 .shrine-card { cursor: pointer; }
-.shrine-card:hover { background: #fffdf9; }
+.shrine-card:not(.selected):hover { background: #fffdf9; transform: translateX(4px); }
 .shrine-card.selected { background: #fffbf0; border-left: 3px solid var(--gold); padding-left: calc(1.5rem - 3px); }
+
+.shrine-card.card-enter { animation: cardIn 0.5s cubic-bezier(0.16, 1, 0.3, 1) both; }
+.panel-fade-in { animation: panelFadeIn 0.3s cubic-bezier(0.16, 1, 0.3, 1) both; }
 
 .index { font-family: 'Bodoni+Moda'; color: var(--border); font-size: 1.4rem; font-weight: 700; }
 
@@ -261,6 +289,7 @@ h1 {
     padding-right: 2.5rem;
     line-height: 1.4;
 }
+
 .panel-location {
     font-size: 0.85rem;
     color: var(--muted);

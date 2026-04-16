@@ -2,6 +2,7 @@ let shrines = [];
 let eventsMap = {};
 let filteredCache = [];
 let openShrineName = null;
+let isFirstRender = true;
 
 const EVENT_CATEGORY_LABEL = {
     public_witness: 'Public Ceremony',
@@ -23,7 +24,7 @@ Promise.all([
     fetch('shrine_events.json').then(r => r.json()).catch(() => [])
 ]).then(([shrineData, eventData]) => {
     shrines = shrineData;
-    eventsMap = Object.fromEntries(eventData.map(e => [e.shrine, e.events]));
+    eventsMap = Object.fromEntries(eventData.map(e => [e.id, { shrine: e.shrine, deity: e.deity, events: e.events }]));
     updatePrefectures();
     render();
 }).catch(err => {
@@ -66,15 +67,19 @@ function highlight(text, query) {
     return text.replace(new RegExp(`(${escaped})`, 'gi'), '<span class="highlight">$1</span>');
 }
 
-function getEventFields(shrine) {
-    return (eventsMap[shrine] || []).flatMap(ev =>
+function getEvents(id) {
+    return eventsMap[id]?.events || [];
+}
+
+function getEventFields(id) {
+    return getEvents(id).flatMap(ev =>
         [ev.name, ev.time, ev.origin, ev.meaning, ev.ritual, ev.prayer, ev.type?.notes]
     );
 }
 
 function hasHiddenMatch(r, query) {
     if (!query) return false;
-    return [...[r.why_visit, r.deity_lore, r.shrine_lore], ...getEventFields(r.shrine)]
+    return [...[r.why_visit, r.deity_lore, r.shrine_lore], ...getEventFields(r.id)]
         .some(f => f && f.toLowerCase().includes(query));
 }
 
@@ -90,7 +95,7 @@ function render() {
         const allFields = [
             r.deity, r.shrine, r.place, r.prayer_focus, r.best_time_to_visit,
             r.why_visit, r.deity_lore, r.shrine_lore,
-            ...getEventFields(r.shrine)
+            ...getEventFields(r.id)
         ];
         const matchSearch = allFields.some(f => f && f.toLowerCase().includes(query));
         const matchRegion = !region || r.region === region;
@@ -104,12 +109,14 @@ function render() {
 
     if (openShrineName && !filtered.find(r => r.shrine === openShrineName)) closePanel();
 
+    container.style.opacity = '0';
     container.innerHTML = filtered.map((r, i) => {
         const hiddenMatch = hasHiddenMatch(r, query);
         const isSelected = r.shrine === openShrineName;
         const { romaji, kanji } = parseDeity(r.deity);
+        const delay = isFirstRender ? `style="animation-delay:${Math.min(i * 0.04, 0.6)}s"` : '';
         return `
-        <div class="shrine-card${isSelected ? ' selected' : ''}" onclick="openPanel(${i})">
+        <div class="shrine-card card-enter${isSelected ? ' selected' : ''}" ${delay} onclick="openPanel(${i})">
             <div class="index">${String(i + 1).padStart(2, '0')}</div>
 
             <div class="deity-info">
@@ -133,6 +140,12 @@ ${hiddenMatch ? `<span class="match-badge">+ details match</span>` : ''}
             <div class="type-pill ${getTypeClass(r.type)}">${r.type}</div>
         </div>`;
     }).join('');
+
+    requestAnimationFrame(() => {
+        container.style.transition = 'opacity 0.2s ease';
+        container.style.opacity = '1';
+    });
+    isFirstRender = false;
 }
 
 function panelSection(label, text, query) {
@@ -144,8 +157,8 @@ function panelSection(label, text, query) {
         </div>`;
 }
 
-function buildEventsHTML(shrine, query) {
-    const events = eventsMap[shrine] || [];
+function buildEventsHTML(id, query) {
+    const events = getEvents(id);
     if (!events.length) return '';
 
     const eventRows = events.map((ev, i) => `
@@ -205,16 +218,23 @@ function openPanel(idx) {
     const query = document.getElementById('sq').value;
     openShrineName = r.shrine;
 
-    document.getElementById('detail-content').innerHTML = `
-        <span class="panel-shrine-name">${r.shrine}</span>
+    const detailContent = document.getElementById('detail-content');
+    const eventMeta = eventsMap[r.id];
+    const shrineName = eventMeta?.shrine || r.shrine;
+
+    detailContent.classList.remove('panel-fade-in');
+    detailContent.innerHTML = `
+        <span class="panel-shrine-name">${shrineName}</span>
         <span class="panel-location">${r.place}</span>
         <div class="panel-grid">
             ${panelSection('Shrine Notes', r.why_visit, query)}
             ${panelSection('Deity Lore', r.deity_lore, query)}
             ${panelSection('Shrine Lore', r.shrine_lore, query)}
         </div>
-        ${buildEventsHTML(r.shrine, query)}
+        ${buildEventsHTML(r.id, query)}
     `;
+    void detailContent.offsetWidth;
+    detailContent.classList.add('panel-fade-in');
 
     document.getElementById('detail-panel').classList.add('open');
     document.getElementById('detail-overlay').classList.add('visible');
