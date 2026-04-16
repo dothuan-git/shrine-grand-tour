@@ -80,7 +80,7 @@
         "kanji": "素戔嗚尊",
         "domain": "God of Storms, Sea & Purification; Slayer of evil and warden against pestilence",
         "title": null,
-        "deity_type": "syncretic"
+        "deity_type": "origin"
       },
       {
         "name": "Kushinadahime no Mikoto",
@@ -106,17 +106,28 @@
   {
     "id": 5,
     "shrine": "Tsushima Shrine",
-    "location": "Tsushima, Aichi",
-    "region": "chubu",
-    "type": "Sohonsha",
-    "address": "",
+    "kanji": "津島神社",
     "deities": [
       {
-        "name": "Susanoo",
-        "kanji": "",
-        "domain": "God of Storms, Sea & heroic valor"
+        "name": "Takehaya Susanoo no Mikoto",
+        "kanji": "建速須佐之男命",
+        "domain": "God of Storms, Swift Power & Purification; Sovereign warden against plague, disaster and all earthly calamity",
+        "title": null,
+        "deity_type": "origin"
+      },
+      {
+        "name": "Ōnamuji no Mikoto",
+        "kanji": "大穴牟遅命",
+        "domain": "God of Nation-Building, Medicine & Earthly Prosperity; Divine son of Susanoo and co-builder of the land",
+        "title": null,
+        "deity_type": "origin"
       }
-    ]
+    ],
+    "location": "Tsushima, Aichi",
+    "region": "Chubu",
+    "type": "Sohonsha",
+    "category": ["Warding", "Purification", "Health", "Business", "Prosperity", "Love"],
+    "address": "1 Shinmei-chō, Tsushima-shi, Aichi-ken 496-0851"
   },
   {
     "id": 6,
