@@ -1,5 +1,6 @@
 [
   {
+    "id": 1,
     "deity": "Amaterasu",
     "title": "—",
     "domain": "Goddess of the Sun, Heaven & Imperial ancestry",
@@ -14,6 +15,7 @@
     "prayer_focus": "All sincere prayers — Amaterasu accepts 'yorozu no koto' (ten thousand matters). Particularly: national peace, imperial family wellbeing, and the most fundamental wish of each visitor. Considered the highest-prestige prayer site in Japan; visited once in a lifetime by many Japanese."
   },
   {
+    "id": 2,
     "deity": "Toyouke-Ōmikami",
     "title": "—",
     "domain": "Goddess of food, clothing, shelter & industry",
@@ -28,6 +30,7 @@
     "prayer_focus": "Food safety, clothing and shelter, industry and business prosperity, and the material foundations of everyday life. Sake brewers, food producers, and all who work in agriculture or industry pray to Toyouke. Also prayed to before visiting Naikū."
   },
   {
+    "id": 3,
     "deity": "Amaterasu",
     "title": "—",
     "domain": "Goddess of the Sun",
@@ -42,6 +45,7 @@
     "prayer_focus": "General solar blessings and wellbeing in the Ōmi region. As one of the oldest Amaterasu sites outside Ise, broadly worshipped for daily protection and the same blessings associated with the imperial ancestor goddess."
   },
   {
+    "id": 4,
     "deity": "Susanoo",
     "title": "—",
     "domain": "God of Storms, Sea & heroic valor",
@@ -56,6 +60,7 @@
     "prayer_focus": "Yakubarai (厄払い, warding off evil and misfortune), plague and disease prevention, business prosperity (shōbai繁盛), and general household safety. Historically the primary shrine for driving out pestilence from Kyoto — a function that remains its most distinctive speciality."
   },
   {
+    "id": 5,
     "deity": "Susanoo",
     "title": "—",
     "domain": "God of Storms, Sea & heroic valor",
@@ -70,6 +75,7 @@
     "prayer_focus": "Yakubarai (warding off evil, plague and disaster), household safety, business prosperity, and child-rearing protection. The shrine's specific historical identity is rooted in plague-prevention — Susanoo's power to drive away epidemic disease."
   },
   {
+    "id": 6,
     "deity": "Susanoo",
     "title": "—",
     "domain": "God of Storms, Sea & heroic valor",
@@ -84,6 +90,7 @@
     "prayer_focus": "General blessings, household safety (家内安全), good harvests and business prosperity. As ichinomiya of Musashi Province it covers the broadest range of petitions. Also musubi (binding of bonds) — connecting people, families, and communities."
   },
   {
+    "id": 7,
     "deity": "Susanoo",
     "title": "—",
     "domain": "God of Storms, Sea & heroic valor",
@@ -98,6 +105,7 @@
     "prayer_focus": "Warding off evil and storms, martial protection, safe journeys, and the blessings of composure and decisive action. Susanoo's slaying of Yamata no Orochi makes this a site for prayers against overwhelming obstacles."
   },
   {
+    "id": 8,
     "deity": "Ōkuninushi",
     "title": "—",
     "domain": "God of nation-building, medicine, marriage & relationships",
@@ -112,6 +120,7 @@
     "prayer_focus": "En-musubi (縁結び) — the tying of all human connections: romantic relationships, marriage, family bonds, friendships, and even business partnerships. The broadest and most distinctive en-musubi shrine in Japan. Also: medicine and healing (Ōkuninushi's secondary domain), and general luck."
   },
   {
+    "id": 9,
     "deity": "Ōkuninushi / Ōmononushi",
     "title": "—",
     "domain": "God of nation-building, medicine & healing",
@@ -126,6 +135,7 @@
     "prayer_focus": "Medicine and healing (byōki kaifuku), plague and epidemic prevention, sake brewing and fermented food quality, and general business prosperity. Japan's oldest and most prestigious site for medical and healing prayers — doctors, brewers, and the sick all pray here."
   },
   {
+    "id": 10,
     "deity": "Ōkuninushi",
     "title": "—",
     "domain": "God of nation-building, medicine & relationships",
@@ -140,6 +150,7 @@
     "prayer_focus": "Maritime safety (航海安全) and safe travel of all kinds — historically the most important shrine in Japan for sailors and seafarers. Today broadly prayed to for traffic safety, safe journeys, and business prosperity. The most universally attended Japanese pilgrimage shrine."
   },
   {
+    "id": 11,
     "deity": "Ōkuninushi (marriage aspect)",
     "title": "—",
     "domain": "God of marriage & relationships",
@@ -154,6 +165,7 @@
     "prayer_focus": "Exclusively en-musubi — romantic relationships and marriage. The most focused and intimate matchmaking prayer site in the Izumo complex, complementing the grand-scale en-musubi blessings of Izumo Taisha next door."
   },
   {
+    "id": 12,
     "deity": "Inari",
     "title": "—",
     "domain": "God/Goddess of rice, foxes, fertility, industry & commerce",
@@ -168,6 +180,7 @@
     "prayer_focus": "Business prosperity (商売繁盛, shōbai繁盛), good harvest, fulfillment of all worldly wishes. Merchants and businesses across Japan maintain a ritual connection to Fushimi Inari. Each torii gate donated represents a wish granted or a prayer for success. The most comprehensive 'worldly success' shrine in Japan."
   },
   {
+    "id": 13,
     "deity": "Inari (Dakiniten aspect)",
     "title": "Buddhist fox deity Dakiniten",
     "domain": "Inari as tantric wish-fulfilling fox deity",
@@ -182,6 +195,7 @@
     "prayer_focus": "Business prosperity and wish fulfillment (genze riyaku — worldly benefits). As a Buddhist temple the prayers take on a more explicitly wish-granting, tantric character. Especially popular with companies and merchants seeking commercial success."
   },
   {
+    "id": 14,
     "deity": "Inari",
     "title": "—",
     "domain": "God/Goddess of rice, foxes, fertility, industry & commerce",
@@ -196,6 +210,7 @@
     "prayer_focus": "Business prosperity, good harvests and agricultural success, household safety. The Kantō tradition of Inari worship here emphasizes community protection and agricultural fertility alongside the commercial blessings."
   },
   {
+    "id": 15,
     "deity": "Inari",
     "title": "—",
     "domain": "God/Goddess of rice, foxes, fertility, industry & commerce",
@@ -210,6 +225,7 @@
     "prayer_focus": "Business prosperity, household safety, and general good fortune. One of the three major Inari shrines — its prayers are particularly valued by Kyushu merchants and business owners."
   },
   {
+    "id": 16,
     "deity": "Inari",
     "title": "—",
     "domain": "God/Goddess of rice, foxes, fertility, industry & commerce",
@@ -224,6 +240,7 @@
     "prayer_focus": "Good harvests, household safety and business prosperity for the Tōhoku farming community. The northern Inari tradition emphasizes agricultural survival and protection from natural hardship."
   },
   {
+    "id": 17,
     "deity": "Inari",
     "title": "—",
     "domain": "God/Goddess of rice, foxes, fertility, industry & commerce",
@@ -238,6 +255,7 @@
     "prayer_focus": "Business prosperity, household safety, and fire prevention. As the historically supreme Kantō Inari shrine, the fox deities here are invoked for general commercial luck and the protection of homes and businesses in the Edo/Tokyo area."
   },
   {
+    "id": 18,
     "deity": "Hachiman",
     "title": "Emperor Ōjin (deified)",
     "domain": "God of war, archery & protector of Japan",
@@ -252,6 +270,7 @@
     "prayer_focus": "Military and competition victory (必勝祈願), national protection, and general wellbeing. Today athletes, companies facing difficult challenges, and individuals seeking to overcome obstacles pray here. Also: business prosperity and family safety."
   },
   {
+    "id": 19,
     "deity": "Hachiman",
     "title": "Emperor Ōjin (deified)",
     "domain": "God of war, archery & protector of Japan",
@@ -266,6 +285,7 @@
     "prayer_focus": "Competition and sports victory (必勝), martial arts excellence, safe childbirth (Hachiman's mother Empress Jingū gave birth while on campaign — making Hachiman shrines also known for safe birth), and general good fortune. One of the most-visited hatsumode shrines in Japan."
   },
   {
+    "id": 20,
     "deity": "Hachiman",
     "title": "Emperor Ōjin (deified)",
     "domain": "God of war, archery & protector of Japan",
@@ -280,6 +300,7 @@
     "prayer_focus": "National protection and driving away misfortune (除厄), victory in competition, and general household safety. Also fire prevention — Nobunaga donated a golden rain gutter to prevent fire. The Hōjō-e ceremony reflects compassion for all life. Imperial family protection specifically."
   },
   {
+    "id": 21,
     "deity": "Hachiman",
     "title": "Emperor Ōjin (deified)",
     "domain": "God of war, archery & protector of Japan",
@@ -294,6 +315,7 @@
     "prayer_focus": "Victory and warding off evil (必勝・除厄), fishing and maritime safety, and gratitude for the harvest (the Hojoya festival's core theme). Also: the Tamaseseri ball ritual on January 3rd — whoever's team wins the ball is said to have good fortune for the year."
   },
   {
+    "id": 22,
     "deity": "Tenjin",
     "title": "Sugawara no Michizane",
     "domain": "God of learning, scholarship & calligraphy",
@@ -308,6 +330,7 @@
     "prayer_focus": "Academic success and exam results (gakugyō jōju, 学業成就) — the most visited site in Japan for students praying before university entrance exams (over 2 million per year). Also: calligraphy, intellectual achievement, and warding off the vengeful power of the falsely accused."
   },
   {
+    "id": 23,
     "deity": "Tenjin",
     "title": "Sugawara no Michizane",
     "domain": "God of learning, scholarship & calligraphy",
@@ -322,6 +345,7 @@
     "prayer_focus": "Academic success and exam results — co-equal with Dazaifu as Japan's supreme academic shrine. University and high school entrance exams are the primary petition. Also: calligraphy, literary achievement, and the more broadly 'Kyoto' association with cultural refinement."
   },
   {
+    "id": 24,
     "deity": "Tenjin",
     "title": "Sugawara no Michizane",
     "domain": "God of learning, scholarship & calligraphy",
@@ -336,6 +360,7 @@
     "prayer_focus": "Academic success (especially for Osaka and Kansai students), exam results, business intelligence and commercial success (reflecting Osaka's merchant culture), and safe journeys. The Tenjin Matsuri draws those praying for luck in all ambitions."
   },
   {
+    "id": 25,
     "deity": "Takemikazuchi",
     "title": "—",
     "domain": "God of thunder, lightning & swords; supreme martial deity",
@@ -350,6 +375,7 @@
     "prayer_focus": "Martial arts and sports victory (武道上達, 必勝), decisive action and courage (kashima-dachi — the blessing given to those setting out on important journeys or challenges), earthquake disaster prevention (via the kaname-ishi stone), and safe travel. Also: en-musubi (via the hitachi-obi sacred sash) and safe childbirth."
   },
   {
+    "id": 26,
     "deity": "Takemikazuchi · Futsunushi · Ame-no-Koyane · Himegami",
     "title": "—",
     "domain": "God of thunder & swords · God of swords · Divine ancestor of the Fujiwara clan",
@@ -364,6 +390,7 @@
     "prayer_focus": "Household safety (家内安全), clan and family prosperity, warding off evil, and martial arts excellence (through Takemikazuchi). As the Fujiwara clan's tutelary shrine it represents ancestral protection, career advancement, and the stability of the household through generations."
   },
   {
+    "id": 27,
     "deity": "Futsunushi",
     "title": "—",
     "domain": "God of swords & martial arts; divine negotiator",
@@ -378,6 +405,7 @@
     "prayer_focus": "Martial arts excellence and sports victory (Futsunushi's sword tradition), competition success, business prosperity, and safe journeys. The Kashima-Shintō-ryū sword school means martial artists in particular pray here for skill and courage."
   },
   {
+    "id": 28,
     "deity": "Takeminakata",
     "title": "—",
     "domain": "God of wind, water, warfare & hunting",
@@ -392,6 +420,7 @@
     "prayer_focus": "Hunting and sports success, good harvests (especially against storm and flood), rain and water blessings, military/competition victory, traffic safety, and general household wellbeing. The most versatile shrine in central Japan — historically one of the broadest-spectrum prayer destinations in the country."
   },
   {
+    "id": 29,
     "deity": "Sarutahiko · Ame-no-Uzume",
     "title": "—",
     "domain": "God of earth, roads & guidance · Goddess of dawn, arts & performance",
@@ -406,6 +435,7 @@
     "prayer_focus": "Safe travel and guidance (michibiki — Sarutahiko guides people through transitions and crossroads), purification (misogi), performing arts excellence (Ame-no-Uzume), and blessings for those beginning new ventures. Sarutahiko is particularly prayed to at the start of any important new journey or life chapter."
   },
   {
+    "id": 30,
     "deity": "Ame-no-Uzume",
     "title": "—",
     "domain": "Goddess of dawn, celebration, arts & performance",
@@ -420,6 +450,7 @@
     "prayer_focus": "Performing arts excellence, entertainment industry success, celebration and festivity. Actors, musicians, dancers, and all performers come to pray for skill, inspiration, and audiences. One of very few shrines dedicated exclusively to the performing arts."
   },
   {
+    "id": 31,
     "deity": "Konohanasakuya-hime",
     "title": "—",
     "domain": "Goddess of Mt. Fuji, cherry blossoms & fire-proof virtue",
@@ -434,6 +465,7 @@
     "prayer_focus": "Safe Fuji climbing (登山安全), fire prevention (kaji-yoke), marriage and easy childbirth (Konohanasakuya-hime's birth ordeal makes her the supreme patron of difficult deliveries), and flowering beauty. Climbers formally begin their ascent here before summiting."
   },
   {
+    "id": 32,
     "deity": "Konohanasakuya-hime",
     "title": "—",
     "domain": "Goddess of cherry blossoms & volcanic mountains",
@@ -448,6 +480,7 @@
     "prayer_focus": "Marriage and romantic relationships, easy childbirth, fire and volcanic disaster prevention, and safe mountain climbing in the Kirishima volcanic range."
   },
   {
+    "id": 33,
     "deity": "Konohanasakuya-hime",
     "title": "—",
     "domain": "Goddess of cherry blossoms & volcanic mountains",
@@ -462,6 +495,7 @@
     "prayer_focus": "Safe mountain climbing, fire and volcanic disaster prevention, and the general blessings of mountain deity worship. Important for those living or working near active Mt. Asama."
   },
   {
+    "id": 34,
     "deity": "Ōyamatsumi",
     "title": "—",
     "domain": "God of mountains, sea & war; father of Konohanasakuya-hime",
@@ -476,6 +510,7 @@
     "prayer_focus": "Martial valor and victory in battle (now: sports and competition), longevity, and safe birth. Warriors donated their armor here after surviving battle — making it Japan's supreme site for prayers before dangerous challenges. The massive armor collection is a legacy of answered prayers."
   },
   {
+    "id": 35,
     "deity": "Ōyamatsumi",
     "title": "—",
     "domain": "God of mountains, sea & war",
@@ -490,6 +525,7 @@
     "prayer_focus": "General blessings for Izu Province and all maritime concerns, business prosperity, and safe sea passage. As the former guardian of the Izu Peninsula and islands, broadly prayed to by those in the Tokai/Izu region for prosperity and safety."
   },
   {
+    "id": 36,
     "deity": "Kotoshironushi",
     "title": "—",
     "domain": "God of fishing, commerce & prophecy; identified with Ebisu",
@@ -504,6 +540,7 @@
     "prayer_focus": "En-musubi and romantic relationships (reflecting Kotoshironushi/Ebisu's role in human connections), safe fishing and maritime activities, and commercial success. The rabbit statues connect to Ōkuninushi's kindness mythology — blessings for those who help others."
   },
   {
+    "id": 37,
     "deity": "Kannon · Raijin · Fujin",
     "title": "Buddhist: Guanyin / Avalokiteśvara · God of Thunder · God of Wind",
     "domain": "Bodhisattva of infinite compassion · Guardian thunder & wind deities",
@@ -518,6 +555,7 @@
     "prayer_focus": "All-purpose worldly blessings through Kannon's infinite compassion — health, family safety, business prosperity, safe childbirth, and fulfillment of sincere wishes. As Tokyo's oldest and most visited temple, the range of prayers is unlimited. Omikuji (fortune slips) here are the most drawn in Japan."
   },
   {
+    "id": 38,
     "deity": "Raijin · Fujin",
     "title": "—",
     "domain": "Gods of thunder & wind",
@@ -532,6 +570,7 @@
     "prayer_focus": "Warding off evil and protection from all spiritual harm (the 1,001 Kannon figures and their guardians form an impenetrable barrier of compassion). Personal safety, relief from suffering, and healing prayers. Raijin and Fujin specifically ward off storm-related disasters."
   },
   {
+    "id": 39,
     "deity": "Raijin (Kuraokami / rain deity)",
     "title": "—",
     "domain": "God of rain, water & the source of rivers",
@@ -546,6 +585,7 @@
     "prayer_focus": "En-musubi and romantic relationships (縁結び) — Kibune is one of Kyoto's major matchmaking shrines, with the water fortune-telling (mizu-uranai) specifically used to divine love fates. Also: rain-calling prayers (historically used in drought), water purification, and relief from summer heat."
   },
   {
+    "id": 40,
     "deity": "Watatsumi / Ryūjin",
     "title": "—",
     "domain": "Dragon god of the sea; ruler of the ocean palace Ryūgū-jō",
@@ -560,6 +600,7 @@
     "prayer_focus": "Maritime safety and safe sea voyages, fishing success, and protection for all who work on the sea. As a shrine on Tsushima — historically Japan's most exposed maritime frontier — the prayers here carry particular urgency for sea safety."
   },
   {
+    "id": 41,
     "deity": "Watatsumi / Ryūjin",
     "title": "—",
     "domain": "Dragon god of the sea & longevity",
@@ -574,6 +615,7 @@
     "prayer_focus": "Longevity and good health (the white-bearded deity of long life), safe passage over water, and general good fortune. The floating torii visible from the road is said to bring good luck to those who see it at sunrise."
   },
   {
+    "id": 42,
     "deity": "Watatsumi / Ryūjin",
     "title": "—",
     "domain": "Dragon god of the sea; Ryukyu sea deity",
@@ -588,6 +630,7 @@
     "prayer_focus": "All Ryukyuan royal and public blessings — historically the supreme site for prayers for the Ryukyu Kingdom's prosperity, good harvests, and safe sea passage. Now prayed to for general wellbeing and connection to Ryukyuan ancestral spirits."
   },
   {
+    "id": 43,
     "deity": "Sumiyoshi Sanjin",
     "title": "—",
     "domain": "Three sea gods of navigation, poetry & purification",
@@ -602,6 +645,7 @@
     "prayer_focus": "Maritime and sea voyage safety (航海安全), purification (harae — Sumiyoshi is the supreme purification deity), waka poetry and literary success, and business prosperity. The Sumiyoshi gods are also prayed to for safe childbirth — reflecting Empress Jingū's legendary safe delivery at sea."
   },
   {
+    "id": 44,
     "deity": "Sumiyoshi Sanjin",
     "title": "—",
     "domain": "Three sea gods of navigation, poetry & purification",
@@ -616,6 +660,7 @@
     "prayer_focus": "Maritime safety, purification, and safe sea voyages. As the original site of Sumiyoshi worship on the continental sea route, especially valued for blessings before overseas travel or business."
   },
   {
+    "id": 45,
     "deity": "Sumiyoshi Sanjin",
     "title": "—",
     "domain": "Three sea gods of navigation, poetry & purification",
@@ -630,6 +675,7 @@
     "prayer_focus": "Maritime safety, safe travel, and business prosperity for those in the Shinagawa/Tokyo Bay merchant community. As the Edo-era port shrine, broadly prayed to for commercial safety and voyages."
   },
   {
+    "id": 46,
     "deity": "Kagutsuchi",
     "title": "—",
     "domain": "God of fire & fire prevention",
@@ -644,6 +690,7 @@
     "prayer_focus": "Fire prevention (kaji-yoke, 火除け) — the primary and defining prayer at Atago. Every household in old Kyoto kept an Atago fire amulet. Also: warding off evil in general, and safe cooking (the kitchen is the most fire-prone space). The annual New Year fire-prevention prayer is the shrine's most important ritual."
   },
   {
+    "id": 47,
     "deity": "Kagutsuchi",
     "title": "—",
     "domain": "God of fire & fire prevention",
@@ -658,6 +705,7 @@
     "prayer_focus": "Fire prevention (kaji-yoke) — Akiha became the most widely distributed fire-prevention faith in Edo-period Japan. Akiha amulets were hung in virtually every home. Also: general disaster prevention."
   },
   {
+    "id": 48,
     "deity": "Izanagi",
     "title": "—",
     "domain": "God of creation, life & purification; father of all kami",
@@ -672,6 +720,7 @@
     "prayer_focus": "Purification (harae and misogi — Izanagi is the origin of all Shinto purification ritual), longevity and good health, safe childbirth, and household safety. The most foundational purification shrine in Japan — visiting here has a deep cleansing character."
   },
   {
+    "id": 49,
     "deity": "Izanagi · Izanami",
     "title": "—",
     "domain": "Creator deities of Japan & all kami",
@@ -686,6 +735,7 @@
     "prayer_focus": "Longevity (長寿, enmei) — Taga Taisha is one of Japan's most famous longevity shrines, and many elderly worshippers make the pilgrimage specifically for long-life prayers. Also: conjugal harmony, safe childbirth, and general household safety."
   },
   {
+    "id": 50,
     "deity": "Izanami",
     "title": "—",
     "domain": "Goddess of death & the underworld (Yomi)",
@@ -700,6 +750,7 @@
     "prayer_focus": "Protection from evil at night and in darkness (日沈宮の別名 — 'Shrine of the Setting Sun') — this shrine is specifically said to guard the nation while Ise guards it in light. Also: maritime safety for those crossing the Sea of Japan, and general Izumo-region protection."
   },
   {
+    "id": 51,
     "deity": "Ninigi-no-Mikoto",
     "title": "—",
     "domain": "God of rice & divine descent; ancestor of the imperial family",
@@ -714,6 +765,7 @@
     "prayer_focus": "Imperial family protection and national prosperity (as the site of tenson kōrin, the divine descent that established Japan), agricultural and harvest blessings, and general good fortune. Particularly associated with beginnings — prayed to when starting something new."
   },
   {
+    "id": 52,
     "deity": "Yamato Takeru",
     "title": "Prince Ōsu (deified posthumously)",
     "domain": "Hero-god of conquest, martial valor & eastern Japan",
@@ -728,6 +780,7 @@
     "prayer_focus": "Martial valor and victory (through Kusanagi — the sword that saved Yamato Takeru), business prosperity, household safety, and general good fortune. Also: academic success (Kusanagi's wisdom aspect). One of Japan's broadest all-purpose prayer sites after Ise and Izumo."
   },
   {
+    "id": 53,
     "deity": "Yamato Takeru",
     "title": "Prince Ōsu (deified)",
     "domain": "Hero-god of conquest & martial valor",
@@ -742,6 +795,7 @@
     "prayer_focus": "Safe travel and disaster prevention, especially for ships and vehicles — ancient shrine tradition links Yamato Takeru's journeys to divine protection on the road. Also: martial valor and the blessings of the Yamato homeland for those pursuing difficult endeavors."
   },
   {
+    "id": 54,
     "deity": "Izanagi · Izanami (wolf deity messengers)",
     "title": "—",
     "domain": "Creator deities; divine wolf (Ōkami) as guardian spirit",
@@ -756,6 +810,7 @@
     "prayer_focus": "Home protection from evil, fire, and disaster (the wolf amulet is Japan's most famous home-protection talisman), spiritual power and enhancement of ki (氣), and general warding off of evil. Particularly prayed to for protection of the household and for spiritual strength during difficult periods."
   },
   {
+    "id": 55,
     "deity": "Futsunushi (Takemikazuchi also enshrined)",
     "title": "—",
     "domain": "God of swords; general divine protection of Chichibu",
@@ -770,6 +825,7 @@
     "prayer_focus": "General household safety and health (家内安全), business prosperity (shōbai繁盛), and warding off evil. The December Night Festival draws prayers for the coming year's safety and success from across the Kantō region."
   },
   {
+    "id": 56,
     "deity": "Yamashita-michi-o",
     "title": "—",
     "domain": "God of the sacred mountain approach, protection & agriculture",
@@ -784,6 +840,7 @@
     "prayer_focus": "Fire prevention and protection from calamity, agricultural blessings, and household safety. The fire-walking ceremony reflects the shrine's central fire-purification tradition."
   },
   {
+    "id": 57,
     "deity": "Ame-no-Tajikarao (and cave-opening deities)",
     "title": "—",
     "domain": "God of athletic strength; deity who opened Amaterasu's cave",
@@ -798,6 +855,7 @@
     "prayer_focus": "Athletic strength and sports excellence (Ame-no-Tajikarao is the god of physical power), safe mountain travel, and ninjutsu/martial arts ability. The Oku-sha is particularly prayed to by athletes and martial artists. Also: general warding off of evil and Shinto purification."
   },
   {
+    "id": 58,
     "deity": "Ōmononushi / wolf deity (Ōkuchi-no-Magami)",
     "title": "—",
     "domain": "God of mountain protection; divine wolf guardian",
@@ -812,6 +870,7 @@
     "prayer_focus": "Home and household protection from evil, fire, and disaster (the wolf amulet, inu-hariko). Also: safe mountain travel and hiking. The wolf deity's protective function mirrors Mitsumine — both are specifically invoked for guarding the home."
   },
   {
+    "id": 59,
     "deity": "Amatsumikaboshi / Kunitokotachi (disputed)",
     "title": "—",
     "domain": "Primordial deity; guardian of Sagami Province",
@@ -826,6 +885,7 @@
     "prayer_focus": "General protection of the household and all of Sagami Province (family safety, health, business prosperity). As ichinomiya of Sagami it accepts the broadest range of petitions from Kanagawa residents. The mystery of the deity adds a sense of primordial, all-encompassing power to prayers here."
   },
   {
+    "id": 60,
     "deity": "Shirayama-hime (Kukurihime)",
     "title": "—",
     "domain": "Goddess of Mt. Hakusan; matchmaking, purification & mysterious wisdom",
@@ -840,6 +900,7 @@
     "prayer_focus": "Matchmaking and en-musubi (縁結び) — Kukurihime's power to tie destinies makes Shirayama one of Hokuriku's premier matchmaking shrines. Also: purification, safe childbirth, and the blessing of profound hidden wisdom in decisions and choices."
   },
   {
+    "id": 61,
     "deity": "Ōkunitama (+ Emperor Meiji; aspects of Ōkuninushi)",
     "title": "Emperor Meiji also enshrined",
     "domain": "General divine protection of Hokkaido; prosperity & development",
@@ -854,6 +915,7 @@
     "prayer_focus": "General blessings for Hokkaido's development and prosperity, household safety, business success, and the opening of new ventures. As the supreme shrine of Hokkaido, the broadest possible range of prayers is offered here. Emperor Meiji's enshrinement adds blessings for modernization and progress."
   },
   {
+    "id": 62,
     "deity": "Munakata Sanjoshin (Three Goddesses)",
     "title": "Tagorihime, Tagitsuhime, Ichikishimahime",
     "domain": "Three sea goddesses; protectors of maritime safety & all roads",
@@ -868,6 +930,7 @@
     "prayer_focus": "Maritime safety (航海安全) and protection of all sea routes — the goddesses were specifically charged with guarding the sea lanes between Japan and the continent. Now broadly prayed to for traffic safety (road, sea, and air), safe journeys, and business success through safe transport."
   },
   {
+    "id": 63,
     "deity": "Ebisu",
     "title": "— (possibly Kotoshironushi or Hiruko)",
     "domain": "God of fishing, commerce, luck & the sea",
@@ -882,6 +945,7 @@
     "prayer_focus": "Business prosperity and commercial luck (商売繁盛) — Ebisu is the supreme deity of merchants, and the Tōka Ebisu festival is the premier commercial blessing event of the year in western Japan. Also: fishing success and good fortune in everyday endeavors."
   },
   {
+    "id": 64,
     "deity": "Ebisu",
     "title": "—",
     "domain": "God of fishing, commerce & luck",
@@ -896,6 +960,7 @@
     "prayer_focus": "Business prosperity (商売繁盛) — Osaka's heart-of-commerce Ebisu shrine, whose Tōka Ebisu festival is the defining commercial blessing event in the city. The fukuzasa bamboo branches with their dangling charm-fish represent the overflowing abundance Ebisu brings."
   },
   {
+    "id": 65,
     "deity": "Ebisu",
     "title": "—",
     "domain": "God of fishing, commerce & luck",
@@ -910,6 +975,7 @@
     "prayer_focus": "Business prosperity through Ebisu's commercial blessing, and loyalty rewarded — Kusunoki Masashige's presence means people pray here for recognition of their dedication and effort, especially in careers that demand loyal service."
   },
   {
+    "id": 66,
     "deity": "Daikokuten",
     "title": "Buddhist: Mahakala; Shinto: aspect of Ōkuninushi",
     "domain": "God of wealth, harvests & the kitchen",
@@ -924,6 +990,7 @@
     "prayer_focus": "Business prosperity (商売繁盛, especially IT and tech industries — major tech companies receive annual blessings here), warding off evil, and general good fortune for the city of Tokyo. The Kanda/Akihabara district's identity as Japan's technology hub has made this the IT industry's shrine."
   },
   {
+    "id": 67,
     "deity": "Daikokuten · Kannon",
     "title": "Buddhist: Mahakala · Guanyin / Avalokiteśvara",
     "domain": "God of wealth & harvests · Bodhisattva of infinite compassion",
@@ -938,6 +1005,7 @@
     "prayer_focus": "Compassion blessings, longevity and health, and safe childbirth through Kannon's mercy. Also: the Daikokuten hall brings specific prayers for kitchen safety, household abundance, and financial wellbeing."
   },
   {
+    "id": 68,
     "deity": "Bishamonten",
     "title": "Buddhist: Vaiśravaṇa (Kubera)",
     "domain": "God of war, treasure & the north; guardian king of dharma",
@@ -952,6 +1020,7 @@
     "prayer_focus": "Spiritual power (ki) enhancement, all-purpose protection, and blessings for those facing darkness or difficulty. The mountain's association with Mao-son (cosmic spiritual power) makes Kurama particularly prayed to for breakthrough experiences and spiritual strength."
   },
   {
+    "id": 69,
     "deity": "Bishamonten",
     "title": "Buddhist: Vaiśravaṇa",
     "domain": "God of war, treasure & the north",
@@ -966,6 +1035,7 @@
     "prayer_focus": "Business prosperity and financial blessing — the flying rice-barn miracle specifically established Shigisan as a place where financial prayers are dramatically answered. Also: warding off evil and military protection (Bishamonten's dual martial/wealth domain)."
   },
   {
+    "id": 70,
     "deity": "Benzaiten",
     "title": "Buddhist: Saraswati (Hindu)",
     "domain": "Goddess of music, arts, water, knowledge & beauty",
@@ -980,6 +1050,7 @@
     "prayer_focus": "Music and performing arts excellence (Benzaiten's Saraswati heritage), romantic relationships (the dragon love story), and warding off calamity. Musicians, artists, and those in the entertainment industry pray here, alongside couples seeking the dragon-goddess's blessing on their love."
   },
   {
+    "id": 71,
     "deity": "Benzaiten",
     "title": "Buddhist: Saraswati",
     "domain": "Goddess of music, arts & water",
@@ -994,6 +1065,7 @@
     "prayer_focus": "Music and arts excellence, beauty and grace, financial fortune (Benzaiten's wealth aspect via Lakshmi connection), and romantic happiness. The island's isolation intensifies the power of all prayers made here."
   },
   {
+    "id": 72,
     "deity": "Benzaiten (Ichikishimahime)",
     "title": "Ichikishimahime / Buddhist Benzaiten",
     "domain": "Goddess of the sea, arts, beauty & good fortune",
@@ -1008,6 +1080,7 @@
     "prayer_focus": "All-purpose — the sublime beauty of the site makes every prayer feel elevated. Specifically: arts and music excellence, maritime safety, beauty and good fortune, and the general blessings of the three Munakata goddesses who govern all roads."
   },
   {
+    "id": 73,
     "deity": "Benzaiten",
     "title": "—",
     "domain": "Goddess of wealth, arts & water",
@@ -1022,6 +1095,7 @@
     "prayer_focus": "Financial prosperity through money washing — the specific ritual of washing coins or bills in the sacred spring is said to multiply the money when spent. Business prosperity and general financial luck. Japan's most famous and pragmatic 'money luck' shrine."
   },
   {
+    "id": 74,
     "deity": "Fukurokuju",
     "title": "Chinese Taoist sage (deified)",
     "domain": "God of wisdom, longevity & happiness; enormous forehead containing all wisdom",
@@ -1036,6 +1110,7 @@
     "prayer_focus": "Longevity and wisdom as part of the Shichifukujin pilgrimage circuit. Fukurokuju specifically blesses those seeking long life and the wisdom to use it well."
   },
   {
+    "id": 75,
     "deity": "Jurōjin",
     "title": "Chinese Taoist sage (deified)",
     "domain": "God of longevity, good health & wisdom",
@@ -1050,6 +1125,7 @@
     "prayer_focus": "Longevity and good health through Jurōjin's blessing. As a multi-deity shrine housing all four founding pillars, also covers general household safety, business prosperity, and harmonious relationships."
   },
   {
+    "id": 76,
     "deity": "Hotei",
     "title": "Budai — Chinese Buddhist monk (deified)",
     "domain": "God of contentment, abundance & good fortune; the Laughing Buddha",
@@ -1064,6 +1140,7 @@
     "prayer_focus": "Contentment, generosity, and abundance through Hotei's laughing blessing. Rubbing his belly is said to bring luck. The broader Zen temple setting also offers prayers for mental peace, clarity, and the wisdom to find happiness in simplicity."
   },
   {
+    "id": 77,
     "deity": "Kichijōten",
     "title": "Buddhist: Śrī-mahādevī (Lakshmi)",
     "domain": "Goddess of beauty, happiness, fertility & good fortune",
@@ -1078,6 +1155,7 @@
     "prayer_focus": "Beauty, happiness, and good fortune through Kichijōten's Lakshmi heritage — blessings for women seeking beauty and grace, for households seeking abundance, and for all who seek the divine beauty in everyday life."
   },
   {
+    "id": 78,
     "deity": "Kichijōten",
     "title": "Buddhist: Lakshmi",
     "domain": "Goddess of beauty, happiness & good fortune",
@@ -1092,6 +1170,7 @@
     "prayer_focus": "Beauty, happiness, fertility and good fortune through Kichijōten. The Yakushi Nyorai (Medicine Buddha) also makes healing and good health a primary petition at this temple."
   },
   {
+    "id": 79,
     "deity": "Jizō",
     "title": "Buddhist: Kṣitigarbha",
     "domain": "Bodhisattva-protector of children, travelers, pregnant women & the dead",
@@ -1106,6 +1185,7 @@
     "prayer_focus": "Protection of children and the deceased (Jizō's core mission), safe childbirth, family safety, and comfort for the bereaved. The rows of Jizō statues in red bibs are specifically for unborn children — prayers for miscarried and aborted babies are a particular speciality of this temple."
   },
   {
+    "id": 80,
     "deity": "Jizō",
     "title": "Buddhist: Kṣitigarbha",
     "domain": "Bodhisattva-protector of children & the dead",
@@ -1120,6 +1200,7 @@
     "prayer_focus": "Memorial prayers for the anonymous dead and relief of suffering for all forgotten souls. Not a site for personal worldly benefit — people come to pray for the dead, to offer memorial masses (kuyō), and to receive comfort in grief."
   },
   {
+    "id": 81,
     "deity": "Kannon",
     "title": "Buddhist: Guanyin",
     "domain": "Bodhisattva of infinite compassion",
@@ -1134,6 +1215,7 @@
     "prayer_focus": "The three Otowa waterfall streams each grant a different blessing: longevity (長寿), romantic love (恋愛成就), and academic success (学業成就) — drinking from all three at once is said to be bad luck (greedy). Also: broad Kannon compassion for any sincere petition. The 'jumping from Kiyomizu stage' spirit — prayed to before bold life decisions."
   },
   {
+    "id": 82,
     "deity": "Kannon",
     "title": "Buddhist: Guanyin",
     "domain": "Bodhisattva of infinite compassion",
@@ -1148,6 +1230,7 @@
     "prayer_focus": "Compassion and mercy for all suffering (Kannon), safe childbirth and protection of children (the eleven-headed Kannon watches all directions simultaneously), and romantic love. One of Kamakura's primary prayer sites for relationships and new life."
   },
   {
+    "id": 83,
     "deity": "Kannon",
     "title": "Buddhist: Guanyin",
     "domain": "Bodhisattva of infinite compassion",
@@ -1162,6 +1245,7 @@
     "prayer_focus": "Spiritual awakening, clarity of mind, and the wisdom to sit with unanswerable questions. Not a shrine for worldly petitions — the rock garden itself is the teaching. Prayed to for insight and the capacity to find peace with impermanence."
   },
   {
+    "id": 84,
     "deity": "Fudō Myōō",
     "title": "Buddhist: Acalanātha",
     "domain": "God of fire, wisdom & destroyer of evil; immovable guardian",
@@ -1176,6 +1260,7 @@
     "prayer_focus": "Warding off evil and disaster (除災招福, the Fudō fire ritual burns away all obstacles), traffic safety (one of Japan's three great traffic-safety temples, extremely popular for car blessings), and business prosperity. The goma fire ritual is the specific vehicle for all petitions here."
   },
   {
+    "id": 85,
     "deity": "Fudō Myōō",
     "title": "Buddhist: Acalanātha",
     "domain": "God of fire & wisdom",
@@ -1190,6 +1275,7 @@
     "prayer_focus": "Warding off evil (yakuyoke), fire prevention and protection, health and longevity, and safe mountain travel. The Hiwatari fire-walking ceremony is a dramatic public enactment of the protection from evil that Fudō provides."
   },
   {
+    "id": 86,
     "deity": "Fudō Myōō",
     "title": "Buddhist: Acalanātha",
     "domain": "God of fire & wisdom",
@@ -1204,6 +1290,7 @@
     "prayer_focus": "Warding off evil, good health and longevity, and business prosperity. The temple's 1,100-year survival against all odds makes it particularly prayed to for protection against overwhelming difficulties."
   },
   {
+    "id": 87,
     "deity": "Tōshō Daigongen",
     "title": "Tokugawa Ieyasu (deified)",
     "domain": "Deified shogun; divine protector of peace & prosperity",
@@ -1218,6 +1305,7 @@
     "prayer_focus": "National peace and prosperity (Ieyasu's deathbed wish — to guard the east and ensure lasting peace), warding off evil, and business success. Also: prayers for victory in difficult endeavors, echoing Ieyasu's unification of Japan from seemingly hopeless position."
   },
   {
+    "id": 88,
     "deity": "Tōshō Daigongen",
     "title": "Tokugawa Ieyasu (deified)",
     "domain": "Deified shogun; divine protector of peace",
@@ -1232,6 +1320,7 @@
     "prayer_focus": "The same as Nikkō Tōshōgū — national peace, prosperity, and warding off evil — but with a slightly stronger emphasis on beginnings and the first step of great undertakings (Ieyasu's spirit was first enshrined here before moving to Nikkō)."
   },
   {
+    "id": 89,
     "deity": "Emperor Meiji (deified)",
     "title": "Emperor Meiji",
     "domain": "Deified emperor of modernization; protector of Tokyo",
@@ -1246,6 +1335,7 @@
     "prayer_focus": "Martial virtue and personal development, marriage and romantic relationships (Emperor Meiji and Empress Shōken were renowned for their devotion to each other — the shrine is one of Tokyo's major en-musubi sites), household safety, and national prosperity."
   },
   {
+    "id": 90,
     "deity": "Emperor Meiji (deified)",
     "title": "Emperor Meiji",
     "domain": "Deified emperor; outer precincts garden",
@@ -1260,6 +1350,7 @@
     "prayer_focus": "General blessings associated with Emperor Meiji's spirit — progress, national development, and the courage to embrace change. The Gaien is more a place of reflection and seasonal appreciation than intensive prayer."
   },
   {
+    "id": 91,
     "deity": "Toyokuni Daimyōjin",
     "title": "Toyotomi Hideyoshi (deified)",
     "domain": "Deified warlord; god of success from humble origins",
@@ -1274,6 +1365,7 @@
     "prayer_focus": "Success from humble origins (出世 — career advancement and social ascent), business achievement, and the rewarding of extraordinary effort. Hideyoshi's story of rising from peasant to ruler makes this the supreme shrine for those who aspire to exceed their station."
   },
   {
+    "id": 92,
     "deity": "Toyokuni Daimyōjin",
     "title": "Toyotomi Hideyoshi (deified)",
     "domain": "Deified warlord; god of success",
@@ -1288,6 +1380,7 @@
     "prayer_focus": "Business success and commercial prosperity (strongly associated with Osaka's merchant identity), career advancement, and the ambition-fulfilling power of Hideyoshi's legacy in the city he built."
   },
   {
+    "id": 93,
     "deity": "Various Kumano kami (Ketsumiko no Ōkami)",
     "title": "—",
     "domain": "Gods of nature, purification, rebirth & the cycle of life",
@@ -1302,6 +1395,7 @@
     "prayer_focus": "Purification and spiritual rebirth (the Kumano kami accept all, regardless of sin or impurity), safe childbirth (the waterfall and river deities of Kumano are strongly associated with new life), recovery from illness, and all sincere petitions. Kumano is the destination for prayers that feel too difficult or impure for other shrines."
   },
   {
+    "id": 94,
     "deity": "Kumano Hayatama",
     "title": "—",
     "domain": "Swift sacred deity of purification & speed",
@@ -1316,6 +1410,7 @@
     "prayer_focus": "Purification and cleansing (the swift-water deity washes away sin and impurity), safe childbirth, and speedy recovery from illness or misfortune. The speed of the Kumano River is invoked for quick resolution of problems."
   },
   {
+    "id": 95,
     "deity": "Kumano Nachi (waterfall deity / Hiryu Gongen)",
     "title": "—",
     "domain": "Spirit of the Nachi waterfall; primal nature deity",
@@ -1330,6 +1425,7 @@
     "prayer_focus": "Safe childbirth (the fall's thunderous descent of water is associated with the power of birth), longevity and good health, and purification. The Nachi waterfall is also prayed to for rain and agricultural blessings in times of drought."
   },
   {
+    "id": 96,
     "deity": "Past / Present / Future life deities (Gassan, Haguro, Yudono)",
     "title": "—",
     "domain": "Three sacred mountains representing past, present & future lives; rebirth",
@@ -1344,6 +1440,7 @@
     "prayer_focus": "Spiritual transformation and rebirth, healing from serious illness, safe childbirth, longevity, and the resolution of deep personal difficulties. Dewa Sanzan prayers are understood to be among the most powerful in Japan — people come here for petitions that have not been answered elsewhere."
   },
   {
+    "id": 97,
     "deity": "Various kami of the Ise sacred complex",
     "title": "—",
     "domain": "Full spectrum of kami venerated by the imperial house",
@@ -1358,6 +1455,7 @@
     "prayer_focus": "The full spectrum of human prayer — wind, rain, food, fire, moon, and all elemental blessings through the 125 subsidiary shrines. Each has its own specific domain within the comprehensive cosmology of the Ise complex."
   },
   {
+    "id": 98,
     "deity": "Take-iwatatsu-no-mikoto (and Aso kami)",
     "title": "—",
     "domain": "God of the Aso volcanic caldera; sacred volcano deity",
@@ -1372,6 +1470,7 @@
     "prayer_focus": "Volcanic and natural disaster prevention (especially earthquake and eruption safety for the Kumamoto/Aso region), agricultural blessings from the mineral-rich volcanic soil, and general household safety for the Aso caldera communities."
   },
   {
+    "id": 99,
     "deity": "Kusunoki-daimyōjin (spirit of the great camphor tree)",
     "title": "—",
     "domain": "God of longevity; spirit of the ancient sacred camphor",
@@ -1386,6 +1485,7 @@
     "prayer_focus": "Longevity (enmei, 延命) — circling the 2,100-year-old camphor tree once is said to add one year to your life. This is the shrine's singular and defining speciality. Also general health and vitality."
   },
   {
+    "id": 100,
     "deity": "Ōyamagui-no-Kami · Ichikishimahime-no-Mikoto",
     "title": "—",
     "domain": "God of brewing & mountain water · Sea goddess of safe passage",
@@ -1400,6 +1500,7 @@
     "prayer_focus": "Sake, miso, soy sauce, vinegar and all fermented food/drink industry blessings — the supreme prayer site for Japan's entire brewing industry. Also: longevity (the sacred spring Kame-no-i is said to grant long life), business prosperity, and safe childbirth."
   },
   {
+    "id": 101,
     "deity": "Kanayamahiko-no-Mikoto",
     "title": "—",
     "domain": "God of mining, metals, iron & all metalworking industry",
@@ -1414,6 +1515,7 @@
     "prayer_focus": "Metal and mining industry blessings (metalworkers, manufacturers, and the entire metal industry pray here), competition and exam victory (the martial deity grants decisive power), and general business success. Modern worshippers include car manufacturers, electronics companies, and steel industry workers."
   },
   {
+    "id": 102,
     "deity": "Ōkuninushi (Ōnamuchi)",
     "title": "—",
     "domain": "God of nation-building, relationships & the pacification of the land",
