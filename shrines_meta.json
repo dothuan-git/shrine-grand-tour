@@ -1,33 +1,41 @@
 [
   {
-    "id": 1,
+    "id": 2,
     "shrine": "Ise Jingū — Naikū (Inner Shrine)",
-    "location": "Ise, Mie",
-    "region": "kansai",
-    "type": "Sohonsha",
-    "address": "",
+    "kanji": "伊勢神宮 内宮（皇大神宮）",
     "deities": [
       {
         "name": "Amaterasu Ōmikami",
         "kanji": "天照大御神",
-        "domain": "Goddess of the Sun, Heaven & Imperial ancestry"
+        "domain": "Supreme Goddess of the Sun, Heaven & Imperial Ancestry; Divine ancestor of the Imperial family and patron deity of the Japanese nation",
+        "title": null,
+        "deity_type": "origin"
       }
-    ]
+    ],
+    "location": "Ise, Mie",
+    "region": "Kinki",
+    "type": "Honsha",
+    "category": ["Imperial", "National Protection", "Purification", "Harvest"],
+    "address": "1 Ujitachi-chō, Ise-shi, Mie-ken 516-0023"
   },
   {
     "id": 2,
     "shrine": "Ise Jingū — Gekū (Outer Shrine)",
-    "location": "Ise, Mie",
-    "region": "kansai",
-    "type": "Sohonsha",
-    "address": "",
+    "kanji": "伊勢神宮 外宮（豊受大神宮）",
     "deities": [
       {
-        "name": "Toyouke Ōmikami",
+        "name": "Toyouke no Ōmikami",
         "kanji": "豊受大御神",
-        "domain": "Goddess of food, clothing, shelter & industry"
+        "domain": "Goddess of Food, Clothing & Shelter; Guardian of Agriculture, Industry & Daily Life",
+        "title": null,
+        "deity_type": "origin"
       }
-    ]
+    ],
+    "location": "Ise, Mie",
+    "region": "Kinki",
+    "type": "Shōgū",
+    "category": ["Harvest", "Business", "Prosperity", "Health", "National Protection"],
+    "address": "279 Toyokawa-chō, Ise-shi, Mie-ken 516-0042"
   },
   {
     "id": 3,
@@ -65,17 +73,35 @@
   {
     "id": 4,
     "shrine": "Yasaka Shrine (Gion-sha)",
-    "location": "Gion, Kyoto",
-    "region": "kansai",
-    "type": "Sohonsha",
-    "address": "",
+    "kanji": "八坂神社（祇園社）",
     "deities": [
       {
-        "name": "Susanoo",
-        "kanji": "",
-        "domain": "God of Storms, Sea & heroic valor"
+        "name": "Susanoo no Mikoto",
+        "kanji": "素戔嗚尊",
+        "domain": "God of Storms, Sea & Purification; Slayer of evil and warden against pestilence",
+        "title": null,
+        "deity_type": "syncretic"
+      },
+      {
+        "name": "Kushinadahime no Mikoto",
+        "kanji": "櫛稲田姫命",
+        "domain": "Goddess of Rice Fields & Feminine Grace; Divine consort of Susanoo",
+        "title": null,
+        "deity_type": "origin"
+      },
+      {
+        "name": "Yahashira no Mikogami",
+        "kanji": "八柱御子神",
+        "domain": "The Eight Divine Children of Susanoo and Kushinadahime; gods of nature, harvest and earthly blessings",
+        "title": null,
+        "deity_type": "origin"
       }
-    ]
+    ],
+    "location": "Kyoto, Kyoto",
+    "region": "Kansai",
+    "type": "Sohonsha",
+    "category": ["Purification", "Warding", "Health", "Victory", "Arts"],
+    "address": "625 Gion-machi Kitagawa, Higashiyama-ku, Kyoto-shi, Kyoto-fu 605-0073"
   },
   {
     "id": 5,
