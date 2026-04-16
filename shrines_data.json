@@ -1,10 +1,10 @@
 [
   {
     "id": 1,
-    "deity": "Amaterasu",
+    "deity": "Amaterasu Ōmikami (天照大御神)",
     "title": "—",
     "domain": "Goddess of the Sun, Heaven & Imperial ancestry",
-    "shrine": "Ise Jingū (Naikū — Inner Shrine)",
+    "shrine": "Ise Jingū — Naikū (皇大神宮, Inner Shrine)",
     "place": "Ise, Mie",
     "region": "kansai",
     "type": "Sohonsha",
@@ -16,10 +16,10 @@
   },
   {
     "id": 2,
-    "deity": "Toyouke-Ōmikami",
+    "deity": "Toyouke Ōmikami (豊受大御神)",
     "title": "—",
     "domain": "Goddess of food, clothing, shelter & industry",
-    "shrine": "Ise Jingū (Gekū — Outer Shrine)",
+    "shrine": "Ise Jingū — Gekū (豊受大神宮, Outer Shrine)",
     "place": "Ise, Mie",
     "region": "kansai",
     "type": "Sohonsha",
