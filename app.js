@@ -1,5 +1,6 @@
 let shrines = [];
 let eventsMap = {};
+let detailMap = {};
 let filteredCache = [];
 let openShrineName = null;
 let isFirstRender = true;
@@ -13,17 +14,19 @@ const EVENT_CATEGORY_CLASS = {
     pilgrimage_experience: 'ev-pilgrimage'
 };
 
-function getPrefecture(place) {
-    if (!place) return '';
-    const parts = place.split(', ');
+function getPrefecture(location) {
+    if (!location) return '';
+    const parts = location.split(', ');
     return parts.length > 1 ? parts[1] : parts[0];
 }
 
 Promise.all([
-    fetch('shrines_data.json').then(r => r.json()),
+    fetch('shrines_meta.json').then(r => r.json()),
+    fetch('shrines_detail.json').then(r => r.json()).catch(() => []),
     fetch('shrine_events.json').then(r => r.json()).catch(() => [])
-]).then(([shrineData, eventData]) => {
-    shrines = shrineData;
+]).then(([metaData, detailData, eventData]) => {
+    shrines = metaData;
+    detailMap = Object.fromEntries(detailData.map(d => [d.shrine_id, d]));
     eventsMap = Object.fromEntries(eventData.map(e => [e.id, { shrine: e.shrine, deity: e.deity, events: e.events }]));
     updatePrefectures();
     render();
@@ -41,7 +44,7 @@ function updatePrefectures() {
 
     const prefectures = [...new Set(shrines
         .filter(r => !region || r.region === region)
-        .map(r => getPrefecture(r.place))
+        .map(r => getPrefecture(r.location))
     )].sort();
 
     pfSelect.innerHTML = '<option value="">All Prefectures</option>' +
@@ -53,12 +56,6 @@ function updatePrefectures() {
 function getTypeClass(t) {
     const map = { Sohonsha: 'tH', Complex: 'tM', Major: 'tJ', Notable: 'tN', Temple: 'tT' };
     return map[t] || 'tN';
-}
-
-function parseDeity(deity) {
-    if (!deity) return { romaji: deity, kanji: null };
-    const match = deity.match(/^(.+?)\s*\(([^)]+)\)/);
-    return match ? { romaji: match[1].trim(), kanji: match[2].trim() } : { romaji: deity, kanji: null };
 }
 
 function highlight(text, query) {
@@ -79,7 +76,8 @@ function getEventFields(id) {
 
 function hasHiddenMatch(r, query) {
     if (!query) return false;
-    return [...[r.why_visit, r.deity_lore, r.shrine_lore], ...getEventFields(r.id)]
+    const d = detailMap[r.id] || {};
+    return [...[d.why_visit, d.deity_lore, d.shrine_lore], ...getEventFields(r.id)]
         .some(f => f && f.toLowerCase().includes(query));
 }
 
@@ -91,10 +89,12 @@ function render() {
     const container = document.getElementById('results-list');
 
     const filtered = shrines.filter(r => {
-        const prefName = getPrefecture(r.place);
+        const prefName = getPrefecture(r.location);
+        const d = detailMap[r.id] || {};
         const allFields = [
-            r.deity, r.shrine, r.place, r.prayer_focus, r.best_time_to_visit,
-            r.why_visit, r.deity_lore, r.shrine_lore,
+            ...r.deities.flatMap(de => [de.name, de.kanji, de.domain, de.title]),
+            r.shrine, r.location, d.prayer_focus, d.best_time_to_visit,
+            d.why_visit, d.deity_lore, d.shrine_lore,
             ...getEventFields(r.id)
         ];
         const matchSearch = allFields.some(f => f && f.toLowerCase().includes(query));
@@ -113,29 +113,29 @@ function render() {
     container.innerHTML = filtered.map((r, i) => {
         const hiddenMatch = hasHiddenMatch(r, query);
         const isSelected = r.shrine === openShrineName;
-        const { romaji, kanji } = parseDeity(r.deity);
+        const d = detailMap[r.id] || {};
         const delay = isFirstRender ? `style="animation-delay:${Math.min(i * 0.04, 0.6)}s"` : '';
         return `
         <div class="shrine-card card-enter${isSelected ? ' selected' : ''}" ${delay} onclick="openPanel(${i})">
             <div class="index">${String(i + 1).padStart(2, '0')}</div>
 
             <div class="deity-info">
-                <span class="name">${highlight(romaji, query)}</span>
-                ${kanji ? `<span class="deity-kanji">${highlight(kanji, query)}</span>` : ''}
-                ${r.title !== '—' ? `<span class="identity">${highlight(r.title, query)}</span>` : ''}
-                <div class="domain">${highlight(r.domain, query)}</div>
+                <span class="name">${highlight(r.deities[0].name, query)}</span>
+                ${r.deities[0].kanji ? `<span class="deity-kanji">${highlight(r.deities[0].kanji, query)}</span>` : ''}
+                ${r.deities[0].title ? `<span class="identity">${highlight(r.deities[0].title, query)}</span>` : ''}
+                <div class="domain">${highlight(r.deities.map(de => de.domain).filter(Boolean).join(' · '), query)}</div>
             </div>
 
             <div class="shrine-info">
                 <span class="shrine-name">${highlight(r.shrine, query)}</span>
-                <span class="location">${highlight(r.place, query)}</span>
+                <span class="location">${highlight(r.location, query)}</span>
                 <div><span class="region-tag">${r.region}</span></div>
 ${hiddenMatch ? `<span class="match-badge">+ details match</span>` : ''}
             </div>
 
-            <div class="prayer-col"><span class="col-label">Prayer Focus</span>${r.prayer_focus ? highlight(r.prayer_focus, query) : '<span class="muted-dash">—</span>'}</div>
+            <div class="prayer-col"><span class="col-label">Prayer Focus</span>${d.prayer_focus ? highlight(d.prayer_focus, query) : '<span class="muted-dash">—</span>'}</div>
 
-            <div class="time-col"><span class="col-label">Best Time to Visit</span>${r.best_time_to_visit ? highlight(r.best_time_to_visit, query) : '<span class="muted-dash">—</span>'}</div>
+            <div class="time-col"><span class="col-label">Best Time to Visit</span>${d.best_time_to_visit ? highlight(d.best_time_to_visit, query) : '<span class="muted-dash">—</span>'}</div>
 
             <div class="type-pill ${getTypeClass(r.type)}">${r.type}</div>
         </div>`;
@@ -221,15 +221,16 @@ function openPanel(idx) {
     const detailContent = document.getElementById('detail-content');
     const eventMeta = eventsMap[r.id];
     const shrineName = eventMeta?.shrine || r.shrine;
+    const d = detailMap[r.id] || {};
 
     detailContent.classList.remove('panel-fade-in');
     detailContent.innerHTML = `
         <span class="panel-shrine-name">${shrineName}</span>
-        <span class="panel-location">${r.place}</span>
+        <span class="panel-location">${r.location}</span>
         <div class="panel-grid">
-            ${panelSection('Shrine Notes', r.why_visit, query)}
-            ${panelSection('Deity Lore', r.deity_lore, query)}
-            ${panelSection('Shrine Lore', r.shrine_lore, query)}
+            ${panelSection('Shrine Notes', d.why_visit, query)}
+            ${panelSection('Deity Lore', d.deity_lore, query)}
+            ${panelSection('Shrine Lore', d.shrine_lore, query)}
         </div>
         ${buildEventsHTML(r.id, query)}
     `;

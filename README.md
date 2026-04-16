@@ -9,17 +9,18 @@ An archival guide to Japan's sacred shrines and temples. Explore 102 shrines thr
 - **Prefecture filtering** (dynamic list based on region)
 - **Shrine type classification** (Sohonsha, Major, Notable, Complex, Temple)
 - **Responsive design** — optimized for 2K displays and mobile
-- **Searchable data** — easily update shrine information in `shrines_data.json`
 
 ## Project Structure
 
 ```
 shrine-grand-tour/
-├── index.html           # Main HTML entry point
-├── style.css            # All styling (design tokens, responsive layout)
-├── app.js               # JavaScript app logic (data fetching, filtering, rendering)
-├── shrines_data.json      # Shrine data (102 entries, easily updatable)
-├── vercel.json          # Vercel deployment config (caching headers)
+├── index.html              # Main HTML entry point
+├── style.css               # All styling (design tokens, responsive layout)
+├── app.js                  # JavaScript app logic (data fetching, filtering, rendering)
+├── shrines_meta.json       # Structural shrine data (102 entries)
+├── shrines_detail.json     # Long-form editorial content (102 entries)
+├── shrine_events.json      # Festival and ceremony data (sparse)
+├── vercel.json             # Vercel deployment config (caching headers)
 └── README.md
 ```
 
@@ -37,61 +38,127 @@ The app is deployed on Vercel with automatic deployments on every git push to th
 ### Running Locally
 
 ```bash
-# Install dependencies (if needed)
-npm install -g serve
-
-# Start local server
 npx serve --listen 3000
-
 # Open http://localhost:3000 in your browser
 ```
 
-**Note:** The app requires a local server to load the JSON data file. Direct `file://` opens will fail.
+**Note:** The app requires a local server to load JSON data. Direct `file://` opens will fail.
 
-## Updating Shrine Data
+## Data Schema
 
-Edit `shrines_data.json` directly. Each shrine entry has these fields:
+Shrine data is split across three JSON files linked by `id` / `shrine_id`.
+
+---
+
+### `shrines_meta.json`
+
+Structural and filterable fields. One entry per shrine.
 
 ```json
 {
-  "deity": "Amaterasu",
-  "title": "—",
-  "domain": "Goddess of the Sun, Heaven & Imperial ancestry",
-  "shrine": "Ise Jingū (Naikū — Inner Shrine)",
-  "place": "Ise, Mie",
+  "id": 1,
+  "shrine": "Ise Jingū — Naikū (Inner Shrine)",
+  "deities": [
+    {
+      "name": "Amaterasu Ōmikami",
+      "kanji": "天照大御神",
+      "domain": "Goddess of the Sun, Heaven & Imperial ancestry",
+      "title": "..."
+    }
+  ],
+  "location": "Ise, Mie",
   "region": "kansai",
   "type": "Sohonsha",
-  "why_visit": "Japan's most sacred Shinto site...",
-  "deity_lore": "Supreme goddess of the heavens...",
-  "shrine_lore": "The sacred mirror Yata no Kagami..."
+  "address": ""
 }
 ```
 
-- `deity` — Name of the deity or divine figure
-- `title` — Human historical identity if applicable (e.g., "Emperor Meiji"), or "—"
-- `domain` — Short description of the deity's powers and domains
-- `shrine` — Full name of the shrine, often with romanized reading in parentheses
-- `place` — City/town and prefecture (e.g., "Ise, Mie"). Some entries are prefecture-only.
-- `region` — One of: `hokkaido`, `tohoku`, `kanto`, `chubu`, `kansai`, `chugoku`, `shikoku`, `kyushu`, `okinawa`
-- `type` — One of: `Sohonsha`, `Complex`, `Major`, `Notable`, `Temple`
-- `why_visit` — Practical notes on significance and visitor experience
-- `deity_lore` — Long-form mythology and divine background
-- `shrine_lore` — Historical and legendary details of the specific shrine
+| Field | Description |
+|-------|-------------|
+| `id` | Primary key |
+| `shrine` | Full shrine name |
+| `deities` | Array of deity objects (see below) |
+| `location` | City and prefecture — `"City, Prefecture"` |
+| `region` | One of: `hokkaido` `tohoku` `kanto` `chubu` `kansai` `chugoku` `shikoku` `kyushu` `okinawa` |
+| `type` | One of: `Sohonsha` `Complex` `Major` `Notable` `Temple` |
+| `address` | Street address (for future map integration) |
 
-After editing, save and refresh your browser — the app will fetch the updated data on next load.
+**Deity object:**
+
+| Field | Description |
+|-------|-------------|
+| `name` | Deity name in romaji |
+| `kanji` | Deity name in kanji (omitted if not applicable) |
+| `domain` | Deity's powers and domain |
+| `title` | Human historical identity if applicable — e.g., `"Sugawara no Michizane"` (omit if none) |
+
+---
+
+### `shrines_detail.json`
+
+Long-form editorial content. Linked to `shrines_meta.json` via `shrine_id`.
+
+```json
+{
+  "shrine_id": 1,
+  "deity_lore": "Supreme goddess of the heavens...",
+  "shrine_lore": "The sacred mirror Yata no Kagami...",
+  "why_visit": "Japan's most sacred Shinto site...",
+  "best_time_to_visit": "Early morning any season...",
+  "prayer_focus": "All sincere prayers..."
+}
+```
+
+| Field | Description |
+|-------|-------------|
+| `shrine_id` | Foreign key → `shrines_meta.id` |
+| `deity_lore` | Mythology and divine background |
+| `shrine_lore` | Historical and legendary details of this specific shrine |
+| `why_visit` | Practical notes on significance and visitor experience |
+| `best_time_to_visit` | Seasonal and event-based visit guidance |
+| `prayer_focus` | Primary purposes pilgrims pray for at this shrine |
+
+---
+
+### `shrine_events.json`
+
+Festival and ceremony data. Sparse — only shrines with notable events have entries.
+
+```json
+{
+  "id": 1,
+  "shrine": "...",
+  "deity": "...",
+  "events": [
+    {
+      "name": "Grand Harvest Offering Festival (神嘗祭, Kannamesai)",
+      "time": "October 15–25",
+      "origin": "...",
+      "meaning": "...",
+      "ritual": "...",
+      "prayer": "...",
+      "type": {
+        "category": "public_witness",
+        "notes": "..."
+      }
+    }
+  ]
+}
+```
+
+`type.category` is one of: `public_witness`, `pilgrimage_experience`
+
+---
 
 ## Deployment
 
-The project is deployed on Vercel and automatically updates on every push to the main branch. The deployment is configured with optimal caching via `vercel.json`:
-- **shrines_data.json**: 1-day cache + 7-day stale-while-revalidate (large file, occasionally updated)
-- **CSS/JS**: 1-year immutable cache (purged on each deploy)
+Deployed on Vercel with automatic updates on every push to `main`. Cache policy via `vercel.json`:
+- **shrines_meta.json / shrines_detail.json**: 1-day cache + 7-day stale-while-revalidate
+- **CSS / JS**: 1-year immutable cache (purged on each deploy)
 
 ## Browser Support
 
-- Chrome/Edge (latest)
-- Firefox (latest)
-- Safari (latest)
-- Mobile browsers (responsive layout)
+Chrome/Edge, Firefox, Safari (all latest) · Mobile browsers
 
 ## License
 

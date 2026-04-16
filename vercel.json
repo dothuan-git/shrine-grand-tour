@@ -1,7 +1,16 @@
 {
   "headers": [
     {
-      "source": "/shrines_data.json",
+      "source": "/shrines_meta.json",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=86400, stale-while-revalidate=604800"
+        }
+      ]
+    },
+    {
+      "source": "/shrines_detail.json",
       "headers": [
         {
           "key": "Cache-Control",

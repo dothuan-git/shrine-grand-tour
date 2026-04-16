@@ -1,0 +1,1630 @@
+[
+  {
+    "id": 1,
+    "shrine": "Ise Jingū — Naikū (Inner Shrine)",
+    "location": "Ise, Mie",
+    "region": "kansai",
+    "type": "Sohonsha",
+    "address": "",
+    "deities": [
+      {
+        "name": "Amaterasu Ōmikami",
+        "kanji": "天照大御神",
+        "domain": "Goddess of the Sun, Heaven & Imperial ancestry"
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "shrine": "Ise Jingū — Gekū (Outer Shrine)",
+    "location": "Ise, Mie",
+    "region": "kansai",
+    "type": "Sohonsha",
+    "address": "",
+    "deities": [
+      {
+        "name": "Toyouke Ōmikami",
+        "kanji": "豊受大御神",
+        "domain": "Goddess of food, clothing, shelter & industry"
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "shrine": "Himure Hachimangū",
+    "location": "Ōmihachiman, Shiga",
+    "region": "kansai",
+    "type": "Notable",
+    "address": "",
+    "deities": [
+      {
+        "name": "Amaterasu",
+        "kanji": "",
+        "domain": "Goddess of the Sun"
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "shrine": "Yasaka Shrine (Gion-sha)",
+    "location": "Gion, Kyoto",
+    "region": "kansai",
+    "type": "Sohonsha",
+    "address": "",
+    "deities": [
+      {
+        "name": "Susanoo",
+        "kanji": "",
+        "domain": "God of Storms, Sea & heroic valor"
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "shrine": "Tsushima Shrine",
+    "location": "Tsushima, Aichi",
+    "region": "chubu",
+    "type": "Sohonsha",
+    "address": "",
+    "deities": [
+      {
+        "name": "Susanoo",
+        "kanji": "",
+        "domain": "God of Storms, Sea & heroic valor"
+      }
+    ]
+  },
+  {
+    "id": 6,
+    "shrine": "Hikawa Shrine (Musashi Ichinomiya)",
+    "location": "Ōmiya, Saitama",
+    "region": "kanto",
+    "type": "Sohonsha",
+    "address": "",
+    "deities": [
+      {
+        "name": "Susanoo",
+        "kanji": "",
+        "domain": "God of Storms, Sea & heroic valor"
+      }
+    ]
+  },
+  {
+    "id": 7,
+    "shrine": "Susa Shrine",
+    "location": "Izumo, Shimane",
+    "region": "chugoku",
+    "type": "Major",
+    "address": "",
+    "deities": [
+      {
+        "name": "Susanoo",
+        "kanji": "",
+        "domain": "God of Storms, Sea & heroic valor"
+      }
+    ]
+  },
+  {
+    "id": 8,
+    "shrine": "Izumo Taisha (Izumo Ōyashiro)",
+    "location": "Taisha, Shimane",
+    "region": "chugoku",
+    "type": "Sohonsha",
+    "address": "",
+    "deities": [
+      {
+        "name": "Ōkuninushi",
+        "kanji": "",
+        "domain": "God of nation-building, medicine, marriage & relationships"
+      }
+    ]
+  },
+  {
+    "id": 9,
+    "shrine": "Ōmiwa Shrine (Miwa Shrine)",
+    "location": "Sakurai, Nara",
+    "region": "kansai",
+    "type": "Sohonsha",
+    "address": "",
+    "deities": [
+      {
+        "name": "Ōkuninushi / Ōmononushi",
+        "kanji": "",
+        "domain": "God of nation-building, medicine & healing"
+      }
+    ]
+  },
+  {
+    "id": 10,
+    "shrine": "Kotohira-gū (Konpira-san)",
+    "location": "Kotohira, Kagawa",
+    "region": "shikoku",
+    "type": "Major",
+    "address": "",
+    "deities": [
+      {
+        "name": "Ōkuninushi",
+        "kanji": "",
+        "domain": "God of nation-building, medicine & relationships"
+      }
+    ]
+  },
+  {
+    "id": 11,
+    "shrine": "Musuhi-no-Yakata",
+    "location": "Izumo, Shimane",
+    "region": "chugoku",
+    "type": "Notable",
+    "address": "",
+    "deities": [
+      {
+        "name": "Ōkuninushi",
+        "kanji": "",
+        "domain": "God of marriage & relationships"
+      }
+    ]
+  },
+  {
+    "id": 12,
+    "shrine": "Fushimi Inari Taisha",
+    "location": "Fushimi, Kyoto",
+    "region": "kansai",
+    "type": "Sohonsha",
+    "address": "",
+    "deities": [
+      {
+        "name": "Inari",
+        "kanji": "",
+        "domain": "God/Goddess of rice, foxes, fertility, industry & commerce"
+      }
+    ]
+  },
+  {
+    "id": 13,
+    "shrine": "Toyokawa Inari (Myōgonji)",
+    "location": "Toyokawa, Aichi",
+    "region": "chubu",
+    "type": "Notable",
+    "address": "",
+    "deities": [
+      {
+        "name": "Inari",
+        "kanji": "",
+        "domain": "Inari as tantric wish-fulfilling fox deity",
+        "title": "Buddhist fox deity Dakiniten"
+      }
+    ]
+  },
+  {
+    "id": 14,
+    "shrine": "Kasama Inari Shrine",
+    "location": "Kasama, Ibaraki",
+    "region": "kanto",
+    "type": "Major",
+    "address": "",
+    "deities": [
+      {
+        "name": "Inari",
+        "kanji": "",
+        "domain": "God/Goddess of rice, foxes, fertility, industry & commerce"
+      }
+    ]
+  },
+  {
+    "id": 15,
+    "shrine": "Yūtoku Inari Shrine",
+    "location": "Kashima, Saga",
+    "region": "kyushu",
+    "type": "Major",
+    "address": "",
+    "deities": [
+      {
+        "name": "Inari",
+        "kanji": "",
+        "domain": "God/Goddess of rice, foxes, fertility, industry & commerce"
+      }
+    ]
+  },
+  {
+    "id": 16,
+    "shrine": "Takekoma Inari Shrine",
+    "location": "Iwanuma, Miyagi",
+    "region": "tohoku",
+    "type": "Major",
+    "address": "",
+    "deities": [
+      {
+        "name": "Inari",
+        "kanji": "",
+        "domain": "God/Goddess of rice, foxes, fertility, industry & commerce"
+      }
+    ]
+  },
+  {
+    "id": 17,
+    "shrine": "Ōji Inari Shrine",
+    "location": "Kita, Tokyo",
+    "region": "kanto",
+    "type": "Notable",
+    "address": "",
+    "deities": [
+      {
+        "name": "Inari",
+        "kanji": "",
+        "domain": "God/Goddess of rice, foxes, fertility, industry & commerce"
+      }
+    ]
+  },
+  {
+    "id": 18,
+    "shrine": "Usa Jingū",
+    "location": "Usa, Ōita",
+    "region": "kyushu",
+    "type": "Sohonsha",
+    "address": "",
+    "deities": [
+      {
+        "name": "Hachiman",
+        "kanji": "",
+        "domain": "God of war, archery & protector of Japan",
+        "title": "Emperor Ōjin (deified)"
+      }
+    ]
+  },
+  {
+    "id": 19,
+    "shrine": "Tsurugaoka Hachimangū",
+    "location": "Kamakura, Kanagawa",
+    "region": "kanto",
+    "type": "Major",
+    "address": "",
+    "deities": [
+      {
+        "name": "Hachiman",
+        "kanji": "",
+        "domain": "God of war, archery & protector of Japan",
+        "title": "Emperor Ōjin (deified)"
+      }
+    ]
+  },
+  {
+    "id": 20,
+    "shrine": "Iwashimizu Hachimangū",
+    "location": "Yawata, Kyoto",
+    "region": "kansai",
+    "type": "Major",
+    "address": "",
+    "deities": [
+      {
+        "name": "Hachiman",
+        "kanji": "",
+        "domain": "God of war, archery & protector of Japan",
+        "title": "Emperor Ōjin (deified)"
+      }
+    ]
+  },
+  {
+    "id": 21,
+    "shrine": "Hakozaki Shrine",
+    "location": "Fukuoka",
+    "region": "kyushu",
+    "type": "Major",
+    "address": "",
+    "deities": [
+      {
+        "name": "Hachiman",
+        "kanji": "",
+        "domain": "God of war, archery & protector of Japan",
+        "title": "Emperor Ōjin (deified)"
+      }
+    ]
+  },
+  {
+    "id": 22,
+    "shrine": "Dazaifu Tenmangū",
+    "location": "Dazaifu, Fukuoka",
+    "region": "kyushu",
+    "type": "Sohonsha",
+    "address": "",
+    "deities": [
+      {
+        "name": "Tenjin",
+        "kanji": "",
+        "domain": "God of learning, scholarship & calligraphy",
+        "title": "Sugawara no Michizane"
+      }
+    ]
+  },
+  {
+    "id": 23,
+    "shrine": "Kitano Tenmangū",
+    "location": "Kamigyō, Kyoto",
+    "region": "kansai",
+    "type": "Sohonsha",
+    "address": "",
+    "deities": [
+      {
+        "name": "Tenjin",
+        "kanji": "",
+        "domain": "God of learning, scholarship & calligraphy",
+        "title": "Sugawara no Michizane"
+      }
+    ]
+  },
+  {
+    "id": 24,
+    "shrine": "Ōsaka Tenmangū",
+    "location": "Kita, Osaka",
+    "region": "kansai",
+    "type": "Major",
+    "address": "",
+    "deities": [
+      {
+        "name": "Tenjin",
+        "kanji": "",
+        "domain": "God of learning, scholarship & calligraphy",
+        "title": "Sugawara no Michizane"
+      }
+    ]
+  },
+  {
+    "id": 25,
+    "shrine": "Kashima Jingū",
+    "location": "Kashima, Ibaraki",
+    "region": "kanto",
+    "type": "Sohonsha",
+    "address": "",
+    "deities": [
+      {
+        "name": "Takemikazuchi",
+        "kanji": "",
+        "domain": "God of thunder, lightning & swords; supreme martial deity"
+      }
+    ]
+  },
+  {
+    "id": 26,
+    "shrine": "Kasuga Taisha",
+    "location": "Nara",
+    "region": "kansai",
+    "type": "Major",
+    "address": "",
+    "deities": [
+      {
+        "name": "Takemikazuchi",
+        "kanji": "",
+        "domain": "God of thunder & swords"
+      },
+      {
+        "name": "Futsunushi",
+        "kanji": "",
+        "domain": "God of swords"
+      },
+      {
+        "name": "Ame-no-Koyane",
+        "kanji": "",
+        "domain": "Divine ancestor of the Fujiwara clan"
+      },
+      {
+        "name": "Himegami",
+        "kanji": "",
+        "domain": ""
+      }
+    ]
+  },
+  {
+    "id": 27,
+    "shrine": "Katori Jingū",
+    "location": "Katori, Chiba",
+    "region": "kanto",
+    "type": "Sohonsha",
+    "address": "",
+    "deities": [
+      {
+        "name": "Futsunushi",
+        "kanji": "",
+        "domain": "God of swords & martial arts; divine negotiator"
+      }
+    ]
+  },
+  {
+    "id": 28,
+    "shrine": "Suwa Taisha (four shrines)",
+    "location": "Suwa, Nagano",
+    "region": "chubu",
+    "type": "Sohonsha",
+    "address": "",
+    "deities": [
+      {
+        "name": "Takeminakata",
+        "kanji": "",
+        "domain": "God of wind, water, warfare & hunting"
+      }
+    ]
+  },
+  {
+    "id": 29,
+    "shrine": "Tsubaki Grand Shrine",
+    "location": "Suzuka, Mie",
+    "region": "kansai",
+    "type": "Sohonsha",
+    "address": "",
+    "deities": [
+      {
+        "name": "Sarutahiko",
+        "kanji": "",
+        "domain": "God of earth, roads & guidance"
+      },
+      {
+        "name": "Ame-no-Uzume",
+        "kanji": "",
+        "domain": "Goddess of dawn, arts & performance"
+      }
+    ]
+  },
+  {
+    "id": 30,
+    "shrine": "Uzume Shrine",
+    "location": "Kyōtango, Kyoto Pref.",
+    "region": "kansai",
+    "type": "Notable",
+    "address": "",
+    "deities": [
+      {
+        "name": "Ame-no-Uzume",
+        "kanji": "",
+        "domain": "Goddess of dawn, celebration, arts & performance"
+      }
+    ]
+  },
+  {
+    "id": 31,
+    "shrine": "Fujisan Hongū Sengen Taisha",
+    "location": "Fujinomiya, Shizuoka",
+    "region": "chubu",
+    "type": "Sohonsha",
+    "address": "",
+    "deities": [
+      {
+        "name": "Konohanasakuya-hime",
+        "kanji": "",
+        "domain": "Goddess of Mt. Fuji, cherry blossoms & fire-proof virtue"
+      }
+    ]
+  },
+  {
+    "id": 32,
+    "shrine": "Kirishima Sengen Shrine",
+    "location": "Kirishima, Kagoshima",
+    "region": "kyushu",
+    "type": "Major",
+    "address": "",
+    "deities": [
+      {
+        "name": "Konohanasakuya-hime",
+        "kanji": "",
+        "domain": "Goddess of cherry blossoms & volcanic mountains"
+      }
+    ]
+  },
+  {
+    "id": 33,
+    "shrine": "Asama Shrine (Suwanomiya Asama Jinja)",
+    "location": "Nagano",
+    "region": "chubu",
+    "type": "Major",
+    "address": "",
+    "deities": [
+      {
+        "name": "Konohanasakuya-hime",
+        "kanji": "",
+        "domain": "Goddess of cherry blossoms & volcanic mountains"
+      }
+    ]
+  },
+  {
+    "id": 34,
+    "shrine": "Ōyamazumi Shrine",
+    "location": "Ōmishima, Ehime",
+    "region": "shikoku",
+    "type": "Sohonsha",
+    "address": "",
+    "deities": [
+      {
+        "name": "Ōyamatsumi",
+        "kanji": "",
+        "domain": "God of mountains, sea & war; father of Konohanasakuya-hime"
+      }
+    ]
+  },
+  {
+    "id": 35,
+    "shrine": "Mishima Taisha",
+    "location": "Mishima, Shizuoka",
+    "region": "chubu",
+    "type": "Major",
+    "address": "",
+    "deities": [
+      {
+        "name": "Ōyamatsumi",
+        "kanji": "",
+        "domain": "God of mountains, sea & war"
+      }
+    ]
+  },
+  {
+    "id": 36,
+    "shrine": "Miho Shrine",
+    "location": "Matsue, Shimane",
+    "region": "chugoku",
+    "type": "Major",
+    "address": "",
+    "deities": [
+      {
+        "name": "Kotoshironushi",
+        "kanji": "",
+        "domain": "God of fishing, commerce & prophecy; identified with Ebisu"
+      }
+    ]
+  },
+  {
+    "id": 37,
+    "shrine": "Senso-ji",
+    "location": "Asakusa, Tokyo",
+    "region": "kanto",
+    "type": "Temple",
+    "address": "",
+    "deities": [
+      {
+        "name": "Kannon",
+        "kanji": "",
+        "domain": "Bodhisattva of infinite compassion",
+        "title": "Buddhist: Guanyin / Avalokiteśvara"
+      },
+      {
+        "name": "Raijin",
+        "kanji": "",
+        "domain": "Guardian thunder & wind deities",
+        "title": "God of Thunder"
+      },
+      {
+        "name": "Fujin",
+        "kanji": "",
+        "domain": "",
+        "title": "God of Wind"
+      }
+    ]
+  },
+  {
+    "id": 38,
+    "shrine": "Sanjūsangendō",
+    "location": "Higashiyama, Kyoto",
+    "region": "kansai",
+    "type": "Temple",
+    "address": "",
+    "deities": [
+      {
+        "name": "Raijin",
+        "kanji": "",
+        "domain": "Gods of thunder & wind"
+      },
+      {
+        "name": "Fujin",
+        "kanji": "",
+        "domain": "Gods of thunder & wind"
+      }
+    ]
+  },
+  {
+    "id": 39,
+    "shrine": "Kibune Shrine",
+    "location": "Sakyō, Kyoto",
+    "region": "kansai",
+    "type": "Sohonsha",
+    "address": "",
+    "deities": [
+      {
+        "name": "Raijin",
+        "kanji": "",
+        "domain": "God of rain, water & the source of rivers"
+      }
+    ]
+  },
+  {
+    "id": 40,
+    "shrine": "Watatsumi Shrine",
+    "location": "Tsushima, Nagasaki",
+    "region": "kyushu",
+    "type": "Major",
+    "address": "",
+    "deities": [
+      {
+        "name": "Watatsumi / Ryūjin",
+        "kanji": "",
+        "domain": "Dragon god of the sea; ruler of the ocean palace Ryūgū-jō"
+      }
+    ]
+  },
+  {
+    "id": 41,
+    "shrine": "Shirahige Shrine",
+    "location": "Takashima, Shiga",
+    "region": "kansai",
+    "type": "Notable",
+    "address": "",
+    "deities": [
+      {
+        "name": "Watatsumi / Ryūjin",
+        "kanji": "",
+        "domain": "Dragon god of the sea & longevity"
+      }
+    ]
+  },
+  {
+    "id": 42,
+    "shrine": "Sefa Utaki (and Ryukyuan sacred sites)",
+    "location": "Nanjō, Okinawa",
+    "region": "okinawa",
+    "type": "Notable",
+    "address": "",
+    "deities": [
+      {
+        "name": "Watatsumi / Ryūjin",
+        "kanji": "",
+        "domain": "Dragon god of the sea; Ryukyu sea deity"
+      }
+    ]
+  },
+  {
+    "id": 43,
+    "shrine": "Sumiyoshi Taisha",
+    "location": "Sumiyoshi, Osaka",
+    "region": "kansai",
+    "type": "Sohonsha",
+    "address": "",
+    "deities": [
+      {
+        "name": "Sumiyoshi Sanjin",
+        "kanji": "",
+        "domain": "Three sea gods of navigation, poetry & purification"
+      }
+    ]
+  },
+  {
+    "id": 44,
+    "shrine": "Sumiyoshi Shrine (Hakata)",
+    "location": "Fukuoka",
+    "region": "kyushu",
+    "type": "Major",
+    "address": "",
+    "deities": [
+      {
+        "name": "Sumiyoshi Sanjin",
+        "kanji": "",
+        "domain": "Three sea gods of navigation, poetry & purification"
+      }
+    ]
+  },
+  {
+    "id": 45,
+    "shrine": "Shinagawa Shrine",
+    "location": "Shinagawa, Tokyo",
+    "region": "kanto",
+    "type": "Notable",
+    "address": "",
+    "deities": [
+      {
+        "name": "Sumiyoshi Sanjin",
+        "kanji": "",
+        "domain": "Three sea gods of navigation, poetry & purification"
+      }
+    ]
+  },
+  {
+    "id": 46,
+    "shrine": "Atago Shrine",
+    "location": "Mt. Atago, Kyoto",
+    "region": "kansai",
+    "type": "Sohonsha",
+    "address": "",
+    "deities": [
+      {
+        "name": "Kagutsuchi",
+        "kanji": "",
+        "domain": "God of fire & fire prevention"
+      }
+    ]
+  },
+  {
+    "id": 47,
+    "shrine": "Akiha Shrine",
+    "location": "Hamamatsu, Shizuoka",
+    "region": "chubu",
+    "type": "Major",
+    "address": "",
+    "deities": [
+      {
+        "name": "Kagutsuchi",
+        "kanji": "",
+        "domain": "God of fire & fire prevention"
+      }
+    ]
+  },
+  {
+    "id": 48,
+    "shrine": "Izanagi Jingū",
+    "location": "Awaji Island, Hyōgo",
+    "region": "kansai",
+    "type": "Sohonsha",
+    "address": "",
+    "deities": [
+      {
+        "name": "Izanagi",
+        "kanji": "",
+        "domain": "God of creation, life & purification; father of all kami"
+      }
+    ]
+  },
+  {
+    "id": 49,
+    "shrine": "Taga Taisha",
+    "location": "Taga, Shiga",
+    "region": "kansai",
+    "type": "Major",
+    "address": "",
+    "deities": [
+      {
+        "name": "Izanagi",
+        "kanji": "",
+        "domain": "Creator deities of Japan & all kami"
+      },
+      {
+        "name": "Izanami",
+        "kanji": "",
+        "domain": "Creator deities of Japan & all kami"
+      }
+    ]
+  },
+  {
+    "id": 50,
+    "shrine": "Hinomisaki Shrine",
+    "location": "Izumo, Shimane",
+    "region": "chugoku",
+    "type": "Notable",
+    "address": "",
+    "deities": [
+      {
+        "name": "Izanami",
+        "kanji": "",
+        "domain": "Goddess of death & the underworld (Yomi)"
+      }
+    ]
+  },
+  {
+    "id": 51,
+    "shrine": "Kirishima Jingū",
+    "location": "Kirishima, Kagoshima",
+    "region": "kyushu",
+    "type": "Sohonsha",
+    "address": "",
+    "deities": [
+      {
+        "name": "Ninigi-no-Mikoto",
+        "kanji": "",
+        "domain": "God of rice & divine descent; ancestor of the imperial family"
+      }
+    ]
+  },
+  {
+    "id": 52,
+    "shrine": "Atsuta Jingū",
+    "location": "Nagoya, Aichi",
+    "region": "chubu",
+    "type": "Major",
+    "address": "",
+    "deities": [
+      {
+        "name": "Yamato Takeru",
+        "kanji": "",
+        "domain": "Hero-god of conquest, martial valor & eastern Japan",
+        "title": "Prince Ōsu (deified posthumously)"
+      }
+    ]
+  },
+  {
+    "id": 53,
+    "shrine": "Yamato Shrine (Ōyamato Jinja)",
+    "location": "Tenri, Nara",
+    "region": "kansai",
+    "type": "Major",
+    "address": "",
+    "deities": [
+      {
+        "name": "Yamato Takeru",
+        "kanji": "",
+        "domain": "Hero-god of conquest & martial valor",
+        "title": "Prince Ōsu (deified)"
+      }
+    ]
+  },
+  {
+    "id": 54,
+    "shrine": "Mitsumine Shrine",
+    "location": "Chichibu, Saitama",
+    "region": "kanto",
+    "type": "Major",
+    "address": "",
+    "deities": [
+      {
+        "name": "Izanagi",
+        "kanji": "",
+        "domain": "Creator deities; divine wolf (Ōkami) as guardian spirit"
+      },
+      {
+        "name": "Izanami",
+        "kanji": "",
+        "domain": "Creator deities; divine wolf (Ōkami) as guardian spirit"
+      }
+    ]
+  },
+  {
+    "id": 55,
+    "shrine": "Chichibu Shrine",
+    "location": "Chichibu, Saitama",
+    "region": "kanto",
+    "type": "Major",
+    "address": "",
+    "deities": [
+      {
+        "name": "Futsunushi",
+        "kanji": "",
+        "domain": "God of swords; general divine protection of Chichibu"
+      }
+    ]
+  },
+  {
+    "id": 56,
+    "shrine": "Hodosan Shrine (Hōdosan Jinja)",
+    "location": "Nagatoro, Saitama",
+    "region": "kanto",
+    "type": "Major",
+    "address": "",
+    "deities": [
+      {
+        "name": "Yamashita-michi-o",
+        "kanji": "",
+        "domain": "God of the sacred mountain approach, protection & agriculture"
+      }
+    ]
+  },
+  {
+    "id": 57,
+    "shrine": "Togakushi Shrine (five shrines)",
+    "location": "Nagano",
+    "region": "chubu",
+    "type": "Complex",
+    "address": "",
+    "deities": [
+      {
+        "name": "Ame-no-Tajikarao",
+        "kanji": "",
+        "domain": "God of athletic strength; deity who opened Amaterasu's cave"
+      }
+    ]
+  },
+  {
+    "id": 58,
+    "shrine": "Musashi Mitake Shrine",
+    "location": "Ōme, Tokyo",
+    "region": "kanto",
+    "type": "Notable",
+    "address": "",
+    "deities": [
+      {
+        "name": "Ōmononushi / wolf deity",
+        "kanji": "",
+        "domain": "God of mountain protection; divine wolf guardian"
+      }
+    ]
+  },
+  {
+    "id": 59,
+    "shrine": "Samukawa Shrine",
+    "location": "Samukawa, Kanagawa",
+    "region": "kanto",
+    "type": "Major",
+    "address": "",
+    "deities": [
+      {
+        "name": "Amatsumikaboshi / Kunitokotachi",
+        "kanji": "",
+        "domain": "Primordial deity; guardian of Sagami Province"
+      }
+    ]
+  },
+  {
+    "id": 60,
+    "shrine": "Shirayama Hime Jinja",
+    "location": "Hakusan, Ishikawa",
+    "region": "chubu",
+    "type": "Sohonsha",
+    "address": "",
+    "deities": [
+      {
+        "name": "Shirayama-hime",
+        "kanji": "",
+        "domain": "Goddess of Mt. Hakusan; matchmaking, purification & mysterious wisdom"
+      }
+    ]
+  },
+  {
+    "id": 61,
+    "shrine": "Hokkaido Jingū",
+    "location": "Sapporo, Hokkaido",
+    "region": "hokkaido",
+    "type": "Sohonsha",
+    "address": "",
+    "deities": [
+      {
+        "name": "Ōkunitama",
+        "kanji": "",
+        "domain": "General divine protection of Hokkaido; prosperity & development",
+        "title": "Emperor Meiji also enshrined"
+      }
+    ]
+  },
+  {
+    "id": 62,
+    "shrine": "Munakata Taisha (Hetsugū, Nakatsugū, Okitsugū)",
+    "location": "Munakata, Fukuoka",
+    "region": "kyushu",
+    "type": "Sohonsha",
+    "address": "",
+    "deities": [
+      {
+        "name": "Munakata Sanjoshin",
+        "kanji": "",
+        "domain": "Three sea goddesses; protectors of maritime safety & all roads",
+        "title": "Tagorihime, Tagitsuhime, Ichikishimahime"
+      }
+    ]
+  },
+  {
+    "id": 63,
+    "shrine": "Nishinomiya Shrine",
+    "location": "Nishinomiya, Hyōgo",
+    "region": "kansai",
+    "type": "Sohonsha",
+    "address": "",
+    "deities": [
+      {
+        "name": "Ebisu",
+        "kanji": "",
+        "domain": "God of fishing, commerce, luck & the sea",
+        "title": "— (possibly Kotoshironushi or Hiruko)"
+      }
+    ]
+  },
+  {
+    "id": 64,
+    "shrine": "Imamiya Ebisu Shrine",
+    "location": "Naniwa, Osaka",
+    "region": "kansai",
+    "type": "Notable",
+    "address": "",
+    "deities": [
+      {
+        "name": "Ebisu",
+        "kanji": "",
+        "domain": "God of fishing, commerce & luck"
+      }
+    ]
+  },
+  {
+    "id": 65,
+    "shrine": "Minatogawa Shrine",
+    "location": "Kobe, Hyōgo",
+    "region": "kansai",
+    "type": "Notable",
+    "address": "",
+    "deities": [
+      {
+        "name": "Ebisu",
+        "kanji": "",
+        "domain": "God of fishing, commerce & luck"
+      }
+    ]
+  },
+  {
+    "id": 66,
+    "shrine": "Kanda Shrine (Kandamyōjin)",
+    "location": "Chiyoda, Tokyo",
+    "region": "kanto",
+    "type": "Major",
+    "address": "",
+    "deities": [
+      {
+        "name": "Daikokuten",
+        "kanji": "",
+        "domain": "God of wealth, harvests & the kitchen",
+        "title": "Buddhist: Mahakala; Shinto: aspect of Ōkuninushi"
+      }
+    ]
+  },
+  {
+    "id": 67,
+    "shrine": "Hase-dera (Nara)",
+    "location": "Sakurai, Nara",
+    "region": "kansai",
+    "type": "Temple",
+    "address": "",
+    "deities": [
+      {
+        "name": "Daikokuten",
+        "kanji": "",
+        "domain": "God of wealth & harvests",
+        "title": "Buddhist: Mahakala"
+      },
+      {
+        "name": "Kannon",
+        "kanji": "",
+        "domain": "Bodhisattva of infinite compassion",
+        "title": "Guanyin / Avalokiteśvara"
+      }
+    ]
+  },
+  {
+    "id": 68,
+    "shrine": "Kurama-dera",
+    "location": "Kurama, Kyoto",
+    "region": "kansai",
+    "type": "Temple",
+    "address": "",
+    "deities": [
+      {
+        "name": "Bishamonten",
+        "kanji": "",
+        "domain": "God of war, treasure & the north; guardian king of dharma",
+        "title": "Buddhist: Vaiśravaṇa (Kubera)"
+      }
+    ]
+  },
+  {
+    "id": 69,
+    "shrine": "Shigisan Chōgosonshi-ji",
+    "location": "Nara",
+    "region": "kansai",
+    "type": "Temple",
+    "address": "",
+    "deities": [
+      {
+        "name": "Bishamonten",
+        "kanji": "",
+        "domain": "God of war, treasure & the north",
+        "title": "Buddhist: Vaiśravaṇa"
+      }
+    ]
+  },
+  {
+    "id": 70,
+    "shrine": "Enoshima Shrine",
+    "location": "Fujisawa, Kanagawa",
+    "region": "kanto",
+    "type": "Major",
+    "address": "",
+    "deities": [
+      {
+        "name": "Benzaiten",
+        "kanji": "",
+        "domain": "Goddess of music, arts, water, knowledge & beauty",
+        "title": "Buddhist: Saraswati (Hindu)"
+      }
+    ]
+  },
+  {
+    "id": 71,
+    "shrine": "Chikubushima Shrine",
+    "location": "Chikubu Island, Shiga",
+    "region": "kansai",
+    "type": "Major",
+    "address": "",
+    "deities": [
+      {
+        "name": "Benzaiten",
+        "kanji": "",
+        "domain": "Goddess of music, arts & water",
+        "title": "Buddhist: Saraswati"
+      }
+    ]
+  },
+  {
+    "id": 72,
+    "shrine": "Itsukushima Shrine",
+    "location": "Miyajima, Hiroshima",
+    "region": "chugoku",
+    "type": "Major",
+    "address": "",
+    "deities": [
+      {
+        "name": "Benzaiten",
+        "kanji": "",
+        "domain": "Goddess of the sea, arts, beauty & good fortune",
+        "title": "Ichikishimahime / Buddhist Benzaiten"
+      }
+    ]
+  },
+  {
+    "id": 73,
+    "shrine": "Zeniarai Benzaiten Ugafuku Shrine",
+    "location": "Kamakura, Kanagawa",
+    "region": "kanto",
+    "type": "Notable",
+    "address": "",
+    "deities": [
+      {
+        "name": "Benzaiten",
+        "kanji": "",
+        "domain": "Goddess of wealth, arts & water"
+      }
+    ]
+  },
+  {
+    "id": 74,
+    "shrine": "Zenpuku-ji",
+    "location": "Minato, Tokyo",
+    "region": "kanto",
+    "type": "Temple",
+    "address": "",
+    "deities": [
+      {
+        "name": "Fukurokuju",
+        "kanji": "",
+        "domain": "God of wisdom, longevity & happiness; enormous forehead containing all wisdom",
+        "title": "Chinese Taoist sage (deified)"
+      }
+    ]
+  },
+  {
+    "id": 75,
+    "shrine": "Yohashira Shrine",
+    "location": "Matsumoto, Nagano",
+    "region": "chubu",
+    "type": "Notable",
+    "address": "",
+    "deities": [
+      {
+        "name": "Jurōjin",
+        "kanji": "",
+        "domain": "God of longevity, good health & wisdom",
+        "title": "Chinese Taoist sage (deified)"
+      }
+    ]
+  },
+  {
+    "id": 76,
+    "shrine": "Kenchō-ji",
+    "location": "Kamakura, Kanagawa",
+    "region": "kanto",
+    "type": "Temple",
+    "address": "",
+    "deities": [
+      {
+        "name": "Hotei",
+        "kanji": "",
+        "domain": "God of contentment, abundance & good fortune; the Laughing Buddha",
+        "title": "Budai — Chinese Buddhist monk (deified)"
+      }
+    ]
+  },
+  {
+    "id": 77,
+    "shrine": "Jōruri-ji",
+    "location": "Kizugawa, Kyoto",
+    "region": "kansai",
+    "type": "Temple",
+    "address": "",
+    "deities": [
+      {
+        "name": "Kichijōten",
+        "kanji": "",
+        "domain": "Goddess of beauty, happiness, fertility & good fortune",
+        "title": "Buddhist: Śrī-mahādevī (Lakshmi)"
+      }
+    ]
+  },
+  {
+    "id": 78,
+    "shrine": "Yakushi-ji",
+    "location": "Nishinokyō, Nara",
+    "region": "kansai",
+    "type": "Temple",
+    "address": "",
+    "deities": [
+      {
+        "name": "Kichijōten",
+        "kanji": "",
+        "domain": "Goddess of beauty, happiness & good fortune",
+        "title": "Buddhist: Lakshmi"
+      }
+    ]
+  },
+  {
+    "id": 79,
+    "shrine": "Zōjō-ji",
+    "location": "Minato, Tokyo",
+    "region": "kanto",
+    "type": "Temple",
+    "address": "",
+    "deities": [
+      {
+        "name": "Jizō",
+        "kanji": "",
+        "domain": "Bodhisattva-protector of children, travelers, pregnant women & the dead",
+        "title": "Buddhist: Kṣitigarbha"
+      }
+    ]
+  },
+  {
+    "id": 80,
+    "shrine": "Adashino Nembutsu-ji",
+    "location": "Sagano, Kyoto",
+    "region": "kansai",
+    "type": "Temple",
+    "address": "",
+    "deities": [
+      {
+        "name": "Jizō",
+        "kanji": "",
+        "domain": "Bodhisattva-protector of children & the dead",
+        "title": "Buddhist: Kṣitigarbha"
+      }
+    ]
+  },
+  {
+    "id": 81,
+    "shrine": "Kiyomizu-dera",
+    "location": "Higashiyama, Kyoto",
+    "region": "kansai",
+    "type": "Temple",
+    "address": "",
+    "deities": [
+      {
+        "name": "Kannon",
+        "kanji": "",
+        "domain": "Bodhisattva of infinite compassion",
+        "title": "Buddhist: Guanyin"
+      }
+    ]
+  },
+  {
+    "id": 82,
+    "shrine": "Hase-dera (Kamakura)",
+    "location": "Kamakura, Kanagawa",
+    "region": "kanto",
+    "type": "Temple",
+    "address": "",
+    "deities": [
+      {
+        "name": "Kannon",
+        "kanji": "",
+        "domain": "Bodhisattva of infinite compassion",
+        "title": "Buddhist: Guanyin"
+      }
+    ]
+  },
+  {
+    "id": 83,
+    "shrine": "Ryōan-ji",
+    "location": "Ukyō, Kyoto",
+    "region": "kansai",
+    "type": "Temple",
+    "address": "",
+    "deities": [
+      {
+        "name": "Kannon",
+        "kanji": "",
+        "domain": "Bodhisattva of infinite compassion",
+        "title": "Buddhist: Guanyin"
+      }
+    ]
+  },
+  {
+    "id": 84,
+    "shrine": "Narita-san Shinshō-ji",
+    "location": "Narita, Chiba",
+    "region": "kanto",
+    "type": "Major",
+    "address": "",
+    "deities": [
+      {
+        "name": "Fudō Myōō",
+        "kanji": "",
+        "domain": "God of fire, wisdom & destroyer of evil; immovable guardian",
+        "title": "Buddhist: Acalanātha"
+      }
+    ]
+  },
+  {
+    "id": 85,
+    "shrine": "Takao-san Yakuō-in",
+    "location": "Hachioji, Tokyo",
+    "region": "kanto",
+    "type": "Notable",
+    "address": "",
+    "deities": [
+      {
+        "name": "Fudō Myōō",
+        "kanji": "",
+        "domain": "God of fire & wisdom",
+        "title": "Buddhist: Acalanātha"
+      }
+    ]
+  },
+  {
+    "id": 86,
+    "shrine": "Daigo-ji",
+    "location": "Fushimi, Kyoto",
+    "region": "kansai",
+    "type": "Temple",
+    "address": "",
+    "deities": [
+      {
+        "name": "Fudō Myōō",
+        "kanji": "",
+        "domain": "God of fire & wisdom",
+        "title": "Buddhist: Acalanātha"
+      }
+    ]
+  },
+  {
+    "id": 87,
+    "shrine": "Nikkō Tōshō-gū",
+    "location": "Nikkō, Tochigi",
+    "region": "kanto",
+    "type": "Sohonsha",
+    "address": "",
+    "deities": [
+      {
+        "name": "Tōshō Daigongen",
+        "kanji": "",
+        "domain": "Deified shogun; divine protector of peace & prosperity",
+        "title": "Tokugawa Ieyasu (deified)"
+      }
+    ]
+  },
+  {
+    "id": 88,
+    "shrine": "Kunōzan Tōshōgū",
+    "location": "Shizuoka",
+    "region": "chubu",
+    "type": "Major",
+    "address": "",
+    "deities": [
+      {
+        "name": "Tōshō Daigongen",
+        "kanji": "",
+        "domain": "Deified shogun; divine protector of peace",
+        "title": "Tokugawa Ieyasu (deified)"
+      }
+    ]
+  },
+  {
+    "id": 89,
+    "shrine": "Meiji Jingū",
+    "location": "Shibuya, Tokyo",
+    "region": "kanto",
+    "type": "Sohonsha",
+    "address": "",
+    "deities": [
+      {
+        "name": "Emperor Meiji",
+        "kanji": "",
+        "domain": "Deified emperor of modernization; protector of Tokyo",
+        "title": "Emperor Meiji"
+      }
+    ]
+  },
+  {
+    "id": 90,
+    "shrine": "Meiji Jingū Gaien",
+    "location": "Shinjuku, Tokyo",
+    "region": "kanto",
+    "type": "Notable",
+    "address": "",
+    "deities": [
+      {
+        "name": "Emperor Meiji",
+        "kanji": "",
+        "domain": "Deified emperor; outer precincts garden",
+        "title": "Emperor Meiji"
+      }
+    ]
+  },
+  {
+    "id": 91,
+    "shrine": "Toyokuni Shrine",
+    "location": "Higashiyama, Kyoto",
+    "region": "kansai",
+    "type": "Major",
+    "address": "",
+    "deities": [
+      {
+        "name": "Toyokuni Daimyōjin",
+        "kanji": "",
+        "domain": "Deified warlord; god of success from humble origins",
+        "title": "Toyotomi Hideyoshi (deified)"
+      }
+    ]
+  },
+  {
+    "id": 92,
+    "shrine": "Osaka Toyokuni Shrine",
+    "location": "Chūō, Osaka",
+    "region": "kansai",
+    "type": "Major",
+    "address": "",
+    "deities": [
+      {
+        "name": "Toyokuni Daimyōjin",
+        "kanji": "",
+        "domain": "Deified warlord; god of success",
+        "title": "Toyotomi Hideyoshi (deified)"
+      }
+    ]
+  },
+  {
+    "id": 93,
+    "shrine": "Kumano Hongū Taisha",
+    "location": "Tanabe, Wakayama",
+    "region": "kansai",
+    "type": "Sohonsha",
+    "address": "",
+    "deities": [
+      {
+        "name": "Various Kumano kami",
+        "kanji": "",
+        "domain": "Gods of nature, purification, rebirth & the cycle of life"
+      }
+    ]
+  },
+  {
+    "id": 94,
+    "shrine": "Kumano Hayatama Taisha",
+    "location": "Shingū, Wakayama",
+    "region": "kansai",
+    "type": "Sohonsha",
+    "address": "",
+    "deities": [
+      {
+        "name": "Kumano Hayatama",
+        "kanji": "",
+        "domain": "Swift sacred deity of purification & speed"
+      }
+    ]
+  },
+  {
+    "id": 95,
+    "shrine": "Kumano Nachi Taisha",
+    "location": "Nachikatsuura, Wakayama",
+    "region": "kansai",
+    "type": "Sohonsha",
+    "address": "",
+    "deities": [
+      {
+        "name": "Kumano Nachi",
+        "kanji": "",
+        "domain": "Spirit of the Nachi waterfall; primal nature deity"
+      }
+    ]
+  },
+  {
+    "id": 96,
+    "shrine": "Dewa Sanzan (Haguro-san, Gas-san, Yudono-san)",
+    "location": "Tsuruoka, Yamagata",
+    "region": "tohoku",
+    "type": "Complex",
+    "address": "",
+    "deities": [
+      {
+        "name": "Past / Present / Future life deities",
+        "kanji": "",
+        "domain": "Three sacred mountains representing past, present & future lives; rebirth"
+      }
+    ]
+  },
+  {
+    "id": 97,
+    "shrine": "Ise Jingū (125 subsidiary shrines)",
+    "location": "Ise, Mie",
+    "region": "kansai",
+    "type": "Complex",
+    "address": "",
+    "deities": [
+      {
+        "name": "Various kami of the Ise sacred complex",
+        "kanji": "",
+        "domain": "Full spectrum of kami venerated by the imperial house"
+      }
+    ]
+  },
+  {
+    "id": 98,
+    "shrine": "Aso Shrine",
+    "location": "Aso, Kumamoto",
+    "region": "kyushu",
+    "type": "Sohonsha",
+    "address": "",
+    "deities": [
+      {
+        "name": "Take-iwatatsu-no-mikoto",
+        "kanji": "",
+        "domain": "God of the Aso volcanic caldera; sacred volcano deity"
+      }
+    ]
+  },
+  {
+    "id": 99,
+    "shrine": "Kinomiya Shrine",
+    "location": "Atami, Shizuoka",
+    "region": "chubu",
+    "type": "Notable",
+    "address": "",
+    "deities": [
+      {
+        "name": "Kusunoki-daimyōjin",
+        "kanji": "",
+        "domain": "God of longevity; spirit of the ancient sacred camphor"
+      }
+    ]
+  },
+  {
+    "id": 100,
+    "shrine": "Matsunoo Taisha",
+    "location": "Nishikyō, Kyoto",
+    "region": "kansai",
+    "type": "Sohonsha",
+    "address": "",
+    "deities": [
+      {
+        "name": "Ōyamagui-no-Kami",
+        "kanji": "",
+        "domain": "God of brewing & mountain water"
+      },
+      {
+        "name": "Ichikishimahime-no-Mikoto",
+        "kanji": "",
+        "domain": "Sea goddess of safe passage"
+      }
+    ]
+  },
+  {
+    "id": 101,
+    "shrine": "Nangū Taisha",
+    "location": "Tarui, Gifu",
+    "region": "chubu",
+    "type": "Sohonsha",
+    "address": "",
+    "deities": [
+      {
+        "name": "Kanayamahiko-no-Mikoto",
+        "kanji": "",
+        "domain": "God of mining, metals, iron & all metalworking industry"
+      }
+    ]
+  },
+  {
+    "id": 102,
+    "shrine": "Keta Taisha",
+    "location": "Hakui, Ishikawa",
+    "region": "chubu",
+    "type": "Sohonsha",
+    "address": "",
+    "deities": [
+      {
+        "name": "Ōkuninushi",
+        "kanji": "",
+        "domain": "God of nation-building, relationships & the pacification of the land"
+      }
+    ]
+  }
+]
