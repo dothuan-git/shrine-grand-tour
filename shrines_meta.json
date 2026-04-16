@@ -32,17 +32,34 @@
   {
     "id": 3,
     "shrine": "Himure Hachimangū",
-    "location": "Ōmihachiman, Shiga",
-    "region": "kansai",
-    "type": "Notable",
-    "address": "",
+    "kanji": "日牟禮八幡宮",
     "deities": [
       {
-        "name": "Amaterasu",
-        "kanji": "",
-        "domain": "Goddess of the Sun"
+        "name": "Hondawake no Mikoto",
+        "kanji": "誉田別尊",
+        "domain": "God of War, Protection & Archery; Divine spirit of Emperor Ōjin",
+        "title": "Emperor Ōjin (応神天皇)",
+        "deity_type": "deified human"
+      },
+      {
+        "name": "Okinagatarashihime no Mikoto",
+        "kanji": "息長足姫尊",
+        "domain": "Goddess of Governance & Maternal Protection; Divine spirit of Empress Jingū",
+        "title": "Empress Jingū (神功皇后)",
+        "deity_type": "deified human"
+      },
+      {
+        "name": "Himegami",
+        "kanji": "比賣神（田心姫命・湍津姫神・市杵嶋姫命）",
+        "domain": "Goddesses of the Sea, Beauty & Blessings; The Three Munakata Goddesses",
+        "title": null,
+        "deity_type": "origin"
       }
-    ]
+    ],
+    "location": "Ōmi-Hachiman, Shiga",
+    "region": "Kansai",
+    "type": "Betsu-hyōsha (別表神社)",
+    "address": "257 Miyauchi-chō, Ōmi-Hachiman-shi, Shiga-ken 523-0828"
   },
   {
     "id": 4,

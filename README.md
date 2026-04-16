@@ -54,43 +54,24 @@ Shrine data is split across three JSON files linked by `id` / `shrine_id`.
 
 Structural and filterable fields. One entry per shrine.
 
-```json
+```jsonc
 {
-  "id": 1,
-  "shrine": "Ise Jingū — Naikū (Inner Shrine)",
+  "id": 1,                                              // Primary key
+  "shrine": "Ise Jingū — Naikū (Inner Shrine)",        // Full shrine name
   "deities": [
     {
-      "name": "Amaterasu Ōmikami",
-      "kanji": "天照大御神",
-      "domain": "Goddess of the Sun, Heaven & Imperial ancestry",
-      "title": "..."
+      "name": "Amaterasu Ōmikami",                      // Deity name in romaji
+      "kanji": "天照大御神",                             // Deity name in kanji (omit if none)
+      "domain": "Goddess of the Sun, Heaven & ...",    // Deity's powers and domain
+      "title": "..."                                    // Human identity if applicable (omit if none)
     }
   ],
-  "location": "Ise, Mie",
-  "region": "kansai",
-  "type": "Sohonsha",
-  "address": ""
+  "location": "Ise, Mie",     // "City, Prefecture"
+  "region": "kansai",         // hokkaido · tohoku · kanto · chubu · kansai · chugoku · shikoku · kyushu · okinawa
+  "type": "Sohonsha",         // Sohonsha · Complex · Major · Notable · Temple
+  "address": ""               // Street address (for future map integration)
 }
 ```
-
-| Field | Description |
-|-------|-------------|
-| `id` | Primary key |
-| `shrine` | Full shrine name |
-| `deities` | Array of deity objects (see below) |
-| `location` | City and prefecture — `"City, Prefecture"` |
-| `region` | One of: `hokkaido` `tohoku` `kanto` `chubu` `kansai` `chugoku` `shikoku` `kyushu` `okinawa` |
-| `type` | One of: `Sohonsha` `Complex` `Major` `Notable` `Temple` |
-| `address` | Street address (for future map integration) |
-
-**Deity object:**
-
-| Field | Description |
-|-------|-------------|
-| `name` | Deity name in romaji |
-| `kanji` | Deity name in kanji (omitted if not applicable) |
-| `domain` | Deity's powers and domain |
-| `title` | Human historical identity if applicable — e.g., `"Sugawara no Michizane"` (omit if none) |
 
 ---
 
@@ -98,25 +79,16 @@ Structural and filterable fields. One entry per shrine.
 
 Long-form editorial content. Linked to `shrines_meta.json` via `shrine_id`.
 
-```json
+```jsonc
 {
-  "shrine_id": 1,
-  "deity_lore": "Supreme goddess of the heavens...",
-  "shrine_lore": "The sacred mirror Yata no Kagami...",
-  "why_visit": "Japan's most sacred Shinto site...",
-  "best_time_to_visit": "Early morning any season...",
-  "prayer_focus": "All sincere prayers..."
+  "shrine_id": 1,                                   // Foreign key → shrines_meta.id
+  "deity_lore": "Supreme goddess of the heavens...", // Mythology and divine background specific to this shrine and this area
+  "shrine_lore": "The sacred mirror Yata no...",    // Historical and legendary details of this shrine
+  "why_visit": "Japan's most sacred Shinto site...", // Practical notes on significance and visitor experience
+  "best_time_to_visit": "Early morning any season...", // Seasonal and event-based visit guidance
+  "prayer_focus": "All sincere prayers..."          // Primary purposes pilgrims pray for here
 }
 ```
-
-| Field | Description |
-|-------|-------------|
-| `shrine_id` | Foreign key → `shrines_meta.id` |
-| `deity_lore` | Mythology and divine background |
-| `shrine_lore` | Historical and legendary details of this specific shrine |
-| `why_visit` | Practical notes on significance and visitor experience |
-| `best_time_to_visit` | Seasonal and event-based visit guidance |
-| `prayer_focus` | Primary purposes pilgrims pray for at this shrine |
 
 ---
 
@@ -124,29 +96,27 @@ Long-form editorial content. Linked to `shrines_meta.json` via `shrine_id`.
 
 Festival and ceremony data. Sparse — only shrines with notable events have entries.
 
-```json
+```jsonc
 {
-  "id": 1,
-  "shrine": "...",
-  "deity": "...",
+  "id": 1,         // Foreign key → shrines_meta.id
+  "shrine": "...", // Shrine name (denormalized for display)
+  "deity": "...",  // Primary deity name (denormalized for display)
   "events": [
     {
       "name": "Grand Harvest Offering Festival (神嘗祭, Kannamesai)",
-      "time": "October 15–25",
-      "origin": "...",
-      "meaning": "...",
-      "ritual": "...",
-      "prayer": "...",
+      "time": "October 15–25",  // When it occurs
+      "origin": "...",          // Historical and mythological origin of the event
+      "meaning": "...",         // Spiritual and cosmological significance
+      "ritual": "...",          // What actually happens during the ceremony
+      "prayer": "...",          // What participants pray for
       "type": {
-        "category": "public_witness",
-        "notes": "..."
+        "category": "public_witness", // public_witness · pilgrimage_experience
+        "notes": "..."                // Practical visitor guidance
       }
     }
   ]
 }
 ```
-
-`type.category` is one of: `public_witness`, `pilgrimage_experience`
 
 ---
 
