@@ -178,9 +178,10 @@ h1 {
 .deity-info .name { font-weight: 600; font-size: 1.1rem; display: block; color: var(--ink); line-height: 1.3; }
 .deity-kanji { font-family: 'Noto Serif JP', serif; font-size: 0.8rem; color: var(--gold); display: block; margin-top: 0.15rem; margin-bottom: 0.3rem; font-weight: 400; }
 .deity-info .identity { font-size: 0.8rem; color: var(--muted); font-style: italic; margin-bottom: 0.3rem; display: block; }
-.deity-info .domain { font-size: 0.85rem; color: var(--muted); line-height: 1.5; }
+.deity-info .domain { font-size: 0.85rem; color: var(--muted); line-height: 1.5; margin-bottom: 0.35rem; }
+.deity-info .deity-type-tag { margin-left: 0; }
 
-.shrine-info .shrine-name { font-family: 'Noto Serif JP', serif; font-weight: 700; color: var(--torii-red); font-size: 1.1rem; display: block; margin-bottom: 0.4rem; }
+.shrine-info .shrine-name { font-family: 'Noto Serif JP', serif; font-weight: 700; color: var(--torii-red); font-size: 1.1rem; display: block; margin-bottom: 0.2rem; }
 .shrine-info .location { font-size: 0.85rem; font-weight: 600; color: var(--ink); }
 .shrine-info .region-tag {
     display: inline-block;
@@ -295,21 +296,133 @@ h1 {
     color: var(--muted);
     font-weight: 600;
     display: block;
-    padding-bottom: 1.5rem;
-    margin-bottom: 1.5rem;
+    padding-bottom: 1.25rem;
+    margin-bottom: 0;
+    border-bottom: none;
+}
+
+/* Deity list */
+.deities-list {
+    padding: 0.75rem 0 1.25rem;
+    margin-bottom: 1.25rem;
     border-bottom: 1px solid var(--border);
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
 }
 
-/* 2-column grid for panel sections and event cards */
-.panel-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 1.75rem;
-    align-items: start;
-    margin-bottom: 1.5rem;
+.deity-row {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
 }
 
-.panel-section { margin-bottom: 0; }
+.deity-name {
+    font-size: 0.9rem;
+    font-weight: 700;
+    color: var(--ink);
+    line-height: 1.4;
+}
+
+.deities-list .deity-kanji {
+    display: inline;
+    font-family: 'Noto Serif JP', serif;
+    font-weight: 400;
+    color: var(--muted);
+    font-size: 0.8rem;
+    margin: 0;
+}
+
+.deity-type-tag {
+    display: inline-block;
+    font-size: 0.6rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    padding: 1px 7px;
+    border-radius: 3px;
+    margin-left: 0.5rem;
+    vertical-align: middle;
+    position: relative;
+    top: -1px;
+}
+.dt-origin     { background: #fef3c7; color: #92400e; }
+.dt-deified    { background: #dbeafe; color: #1e40af; }
+.dt-syncretic  { background: #f3e8ff; color: #6b21a8; }
+.dt-imported   { background: #dcfce7; color: #166534; }
+
+/* Shrine category tags */
+.category-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4px;
+    margin-top: 0.5rem;
+}
+.category-tag {
+    display: inline-block;
+    font-size: 0.55rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    padding: 1px 6px;
+    border-radius: 3px;
+    white-space: nowrap;
+}
+
+/* Martial & Protective */
+.cat-victory             { background: #fee2e2; color: #991b1b; }
+.cat-protection          { background: #ffe4e6; color: #9f1239; }
+.cat-warding             { background: #fecdd3; color: #881337; }
+
+/* Commerce & Wealth */
+.cat-business            { background: #ffedd5; color: #9a3412; }
+.cat-prosperity          { background: #fef9c3; color: #854d0e; }
+
+/* Knowledge */
+.cat-academic            { background: #dbeafe; color: #1e40af; }
+.cat-wisdom              { background: #e0e7ff; color: #3730a3; }
+
+/* Relationships */
+.cat-love                { background: #fce7f3; color: #9d174d; }
+.cat-marriage            { background: #fbcfe8; color: #831843; }
+.cat-fertility           { background: #f5d0fe; color: #86198f; }
+.cat-childbirth          { background: #fae8ff; color: #7e22ce; }
+
+/* Health & Vitality */
+.cat-health              { background: #dcfce7; color: #166534; }
+.cat-longevity           { background: #d1fae5; color: #065f46; }
+.cat-purification        { background: #ccfbf1; color: #115e59; }
+
+/* Journey */
+.cat-travel              { background: #cffafe; color: #155e75; }
+.cat-seafaring           { background: #bae6fd; color: #075985; }
+
+/* Creative */
+.cat-arts                { background: #ddd6fe; color: #5b21b6; }
+.cat-craft               { background: #e9d5ff; color: #6b21a8; }
+
+/* Sacred & Ceremonial */
+.cat-imperial            { background: #fde68a; color: #78350f; }
+.cat-national-protection { background: #e2e8f0; color: #334155; }
+.cat-ancestral-rites     { background: #f5ebe0; color: #78350f; }
+.cat-spirit-pacification { background: #e8eaf6; color: #283593; }
+
+/* Nature */
+.cat-harvest             { background: #ecfccb; color: #3f6212; }
+
+.deity-domain {
+    font-size: 0.78rem;
+    color: #555;
+    line-height: 1.5;
+}
+
+.deity-title {
+    font-size: 0.73rem;
+    color: var(--gold);
+    font-style: italic;
+}
+
+.panel-section { margin-bottom: 1.75rem; }
 .panel-section strong {
     color: var(--gold);
     font-weight: 700;
@@ -437,11 +550,16 @@ h1 {
     width: 100%;
 }
 
-.tH { background: var(--ink); color: white; }
-.tM { background: #fee2e2; color: #991b1b; }
-.tJ { background: #fef3c7; color: #92400e; }
-.tN { background: #f3f4f6; color: #374151; }
-.tT { background: #ede9fe; color: #5b21b6; }
+/* Shrine rank pills — Japanese traditional tones (和色)
+   Hierarchy reads through warmth & saturation, not heavy dark fills */
+.tHon { background: #1a1816; color: #faf5ed; }  /* 漆 Urushi — dark lacquer with warm parchment white, top rank */
+.tSoh { background: #f0e0c0; color: #7a5520; }  /* 金茶 Kincha — gold-brown, head shrine network */
+.tIch { background: #d8dee6; color: #3a4f68; }  /* 縹 Hanada — faded indigo, provincial first shrine */
+.tKok { background: #e0d5e5; color: #5a3868; }  /* 藤 Fuji — wisteria, national/government prestige */
+.tBep { background: #e5dbc8; color: #6b5228; }  /* 丁子 Chōji — clove, established important */
+.tSho { background: #f0e8d0; color: #8a7340; }  /* 薄香 Usukō — light incense, subsidiary */
+.tSon { background: #ece8e0; color: #7a7060; }  /* 白茶 Shiracha — pale tea, village shrine */
+.tTem { background: #d0ddd5; color: #2d5a3e; }  /* 青磁 Seiji — celadon, temple-shrine syncretic */
 
 @media (max-width: 1200px) {
     .list-header { display: none; }

@@ -5,6 +5,45 @@ let filteredCache = [];
 let openShrineName = null;
 let isFirstRender = true;
 
+const DEITY_TYPE_LABEL = {
+    origin: 'Origin',
+    'deified human': 'Deified Human',
+    syncretic: 'Syncretic',
+    imported: 'Imported'
+};
+const DEITY_TYPE_CLASS = {
+    origin: 'dt-origin',
+    'deified human': 'dt-deified',
+    syncretic: 'dt-syncretic',
+    imported: 'dt-imported'
+};
+
+const CATEGORY_CLASS = {
+    'Victory': 'cat-victory',
+    'Protection': 'cat-protection',
+    'Business': 'cat-business',
+    'Prosperity': 'cat-prosperity',
+    'Academic': 'cat-academic',
+    'Wisdom': 'cat-wisdom',
+    'Love': 'cat-love',
+    'Marriage': 'cat-marriage',
+    'Fertility': 'cat-fertility',
+    'Childbirth': 'cat-childbirth',
+    'Health': 'cat-health',
+    'Longevity': 'cat-longevity',
+    'Purification': 'cat-purification',
+    'Warding': 'cat-warding',
+    'Travel': 'cat-travel',
+    'Seafaring': 'cat-seafaring',
+    'Arts': 'cat-arts',
+    'Craft': 'cat-craft',
+    'Imperial': 'cat-imperial',
+    'National Protection': 'cat-national-protection',
+    'Ancestral Rites': 'cat-ancestral-rites',
+    'Spirit Pacification': 'cat-spirit-pacification',
+    'Harvest': 'cat-harvest'
+};
+
 const EVENT_CATEGORY_LABEL = {
     public_witness: 'Public Ceremony',
     pilgrimage_experience: 'Pilgrimage Atmosphere'
@@ -54,8 +93,12 @@ function updatePrefectures() {
 }
 
 function getTypeClass(t) {
-    const map = { Sohonsha: 'tH', Complex: 'tM', Major: 'tJ', Notable: 'tN', Temple: 'tT' };
-    return map[t] || 'tN';
+    const map = {
+        Sohonsha: 'tSoh', Honsha: 'tHon', Ichinomiya: 'tIch',
+        'Kokuhei-sha': 'tKok', 'Beppyo-sha': 'tBep',
+        'Shōgū': 'tSho', Sonsha: 'tSon', Templeshrine: 'tTem'
+    };
+    return map[t] || 'tSon';
 }
 
 function highlight(text, query) {
@@ -95,6 +138,7 @@ function render() {
             ...r.deities.flatMap(de => [de.name, de.kanji, de.domain, de.title]),
             r.shrine, r.location, d.prayer_focus, d.best_time_to_visit,
             d.why_visit, d.deity_lore, d.shrine_lore,
+            ...(r.category || []),
             ...getEventFields(r.id)
         ];
         const matchSearch = allFields.some(f => f && f.toLowerCase().includes(query));
@@ -124,6 +168,7 @@ function render() {
                 ${r.deities[0].kanji ? `<span class="deity-kanji">${highlight(r.deities[0].kanji, query)}</span>` : ''}
                 ${r.deities[0].title ? `<span class="identity">${highlight(r.deities[0].title, query)}</span>` : ''}
                 <div class="domain">${highlight(r.deities.map(de => de.domain).filter(Boolean).join(' · '), query)}</div>
+                ${r.deities[0].deity_type ? `<span class="deity-type-tag ${DEITY_TYPE_CLASS[r.deities[0].deity_type] || ''}">${DEITY_TYPE_LABEL[r.deities[0].deity_type] || ''}</span>` : ''}
             </div>
 
             <div class="shrine-info">
@@ -133,7 +178,11 @@ function render() {
 ${hiddenMatch ? `<span class="match-badge">+ details match</span>` : ''}
             </div>
 
-            <div class="prayer-col"><span class="col-label">Prayer Focus</span>${d.prayer_focus ? highlight(d.prayer_focus, query) : '<span class="muted-dash">—</span>'}</div>
+            <div class="prayer-col">
+                <span class="col-label">Prayer Focus</span>
+                ${d.prayer_focus ? highlight(d.prayer_focus, query) : '<span class="muted-dash">—</span>'}
+                ${r.category?.length ? `<div class="category-tags">${r.category.filter(Boolean).map(c => `<span class="category-tag ${CATEGORY_CLASS[c] || ''}">${c}</span>`).join('')}</div>` : ''}
+            </div>
 
             <div class="time-col"><span class="col-label">Best Time to Visit</span>${d.best_time_to_visit ? highlight(d.best_time_to_visit, query) : '<span class="muted-dash">—</span>'}</div>
 
@@ -146,6 +195,24 @@ ${hiddenMatch ? `<span class="match-badge">+ details match</span>` : ''}
         container.style.opacity = '1';
     });
     isFirstRender = false;
+}
+
+function buildDeitiesHTML(deities, query) {
+    if (!deities || !deities.length) return '';
+    const rows = deities.map(d => {
+        const nameStr = highlight(d.name, query);
+        const kanji = d.kanji ? ` — <span class="deity-kanji">${highlight(d.kanji, query)}</span>` : '';
+        const domain = d.domain ? `<span class="deity-domain">${highlight(d.domain, query)}</span>` : '';
+        const title = d.title ? `<span class="deity-title">${highlight(d.title, query)}</span>` : '';
+        const dtClass = DEITY_TYPE_CLASS[d.deity_type] || '';
+        const dtLabel = DEITY_TYPE_LABEL[d.deity_type] || '';
+        const typeTag = dtLabel ? `<span class="deity-type-tag ${dtClass}">${dtLabel}</span>` : '';
+        return `<div class="deity-row">
+            <div class="deity-name">${nameStr}${kanji}${typeTag}</div>
+            ${domain}${title}
+        </div>`;
+    }).join('');
+    return `<div class="deities-list">${rows}</div>`;
 }
 
 function panelSection(label, text, query) {
@@ -227,11 +294,10 @@ function openPanel(idx) {
     detailContent.innerHTML = `
         <span class="panel-shrine-name">${shrineName}</span>
         <span class="panel-location">${r.location}</span>
-        <div class="panel-grid">
-            ${panelSection('Shrine Notes', d.why_visit, query)}
-            ${panelSection('Deity Lore', d.deity_lore, query)}
-            ${panelSection('Shrine Lore', d.shrine_lore, query)}
-        </div>
+        ${buildDeitiesHTML(r.deities, query)}
+        ${panelSection('Shrine Notes', d.why_visit, query)}
+        ${panelSection('Deity Lore', d.deity_lore, query)}
+        ${panelSection('Shrine Lore', d.shrine_lore, query)}
         ${buildEventsHTML(r.id, query)}
     `;
     void detailContent.offsetWidth;
