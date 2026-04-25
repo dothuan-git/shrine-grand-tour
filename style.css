@@ -199,6 +199,8 @@ h1 {
     line-height: 1.6;
     color: #444;
 }
+.time-col p { margin-bottom: 0.5rem; }
+.time-col p:last-child { margin-bottom: 0; }
 
 .col-label {
     display: none;
@@ -410,6 +412,7 @@ h1 {
 /* Nature */
 .cat-harvest             { background: #ecfccb; color: #3f6212; }
 
+
 .deity-domain {
     font-size: 0.78rem;
     color: #555;
@@ -508,7 +511,7 @@ h1 {
 .event-chevron {
     font-size: 0.75rem;
     color: var(--muted);
-    transition: transform 0.25s ease;
+    transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
     flex-shrink: 0;
 }
 .event-row.open .event-chevron { transform: rotate(180deg); }
@@ -516,14 +519,21 @@ h1 {
 .event-body {
     max-height: 0;
     overflow: hidden;
-    transition: max-height 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+    transition: max-height 0.45s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .event-body-inner {
     padding: 0.75rem 0.75rem 1.25rem;
     display: flex;
     flex-direction: column;
-    gap: 1.25rem;
+    opacity: 0;
+    transform: translateY(-6px);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+.event-row.open .event-body-inner {
+    opacity: 1;
+    transform: translateY(0);
+    transition-delay: 0.08s;
 }
 
 .event-category {
@@ -560,6 +570,7 @@ h1 {
 .tSho { background: #f0e8d0; color: #8a7340; }  /* 薄香 Usukō — light incense, subsidiary */
 .tSon { background: #ece8e0; color: #7a7060; }  /* 白茶 Shiracha — pale tea, village shrine */
 .tTem { background: #d0ddd5; color: #2d5a3e; }  /* 青磁 Seiji — celadon, temple-shrine syncretic */
+.tCho { background: #ebd4cc; color: #8b3a2a; }  /* 朱 Shu — vermillion, imperial-envoy shrine */
 
 @media (max-width: 1200px) {
     .list-header { display: none; }

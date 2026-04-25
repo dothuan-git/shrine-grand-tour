@@ -96,9 +96,25 @@ function getTypeClass(t) {
     const map = {
         Sohonsha: 'tSoh', Honsha: 'tHon', Ichinomiya: 'tIch',
         'Kokuhei-sha': 'tKok', 'Beppyo-sha': 'tBep',
-        'Shōgū': 'tSho', Sonsha: 'tSon', Templeshrine: 'tTem'
+        'Shōgū': 'tSho', Sonsha: 'tSon', Templeshrine: 'tTem',
+        Chokusaisha: 'tCho'
     };
     return map[t] || 'tSon';
+}
+
+function getBestTime(d) {
+    const bt = d.best_time_to_visit;
+    if (!bt) return null;
+    if (typeof bt === 'string') return bt;
+    return [bt.events, bt.season].filter(Boolean);
+}
+
+function bestTimeHTML(d, query) {
+    const bt = d.best_time_to_visit;
+    if (!bt) return '<span class="muted-dash">—</span>';
+    if (typeof bt === 'string') return highlight(bt, query);
+    return [bt.events, bt.season].filter(Boolean)
+        .map(t => `<p>${highlight(t, query)}</p>`).join('');
 }
 
 function highlight(text, query) {
@@ -136,7 +152,8 @@ function render() {
         const d = detailMap[r.id] || {};
         const allFields = [
             ...r.deities.flatMap(de => [de.name, de.kanji, de.domain, de.title]),
-            r.shrine, r.location, d.prayer_focus, d.best_time_to_visit,
+            r.shrine, r.location, d.prayer_focus,
+            ...[].concat(getBestTime(d) || []),
             d.why_visit, d.deity_lore, d.shrine_lore,
             ...(r.category || []),
             ...getEventFields(r.id)
@@ -184,7 +201,7 @@ ${hiddenMatch ? `<span class="match-badge">+ details match</span>` : ''}
                 ${r.category?.length ? `<div class="category-tags">${r.category.filter(Boolean).map(c => `<span class="category-tag ${CATEGORY_CLASS[c] || ''}">${c}</span>`).join('')}</div>` : ''}
             </div>
 
-            <div class="time-col"><span class="col-label">Best Time to Visit</span>${d.best_time_to_visit ? highlight(d.best_time_to_visit, query) : '<span class="muted-dash">—</span>'}</div>
+            <div class="time-col"><span class="col-label">Best Time to Visit</span>${bestTimeHTML(d, query)}</div>
 
             <div class="type-pill ${getTypeClass(r.type)}">${r.type}</div>
         </div>`;
@@ -267,9 +284,11 @@ function toggleEvent(btn) {
 
     if (isOpen) {
         body.style.maxHeight = body.scrollHeight + 'px';
-        requestAnimationFrame(() => { body.style.maxHeight = '0'; });
         row.classList.remove('open');
         btn.setAttribute('aria-expanded', 'false');
+        requestAnimationFrame(() => {
+            requestAnimationFrame(() => { body.style.maxHeight = '0'; });
+        });
     } else {
         body.style.maxHeight = body.scrollHeight + 'px';
         row.classList.add('open');

@@ -1,6 +1,6 @@
 [
   {
-    "id": 2,
+    "id": 1,
     "shrine": "Ise Jingū — Naikū (Inner Shrine)",
     "kanji": "伊勢神宮 内宮（皇大神宮）",
     "deities": [
@@ -132,62 +132,131 @@
   {
     "id": 6,
     "shrine": "Hikawa Shrine (Musashi Ichinomiya)",
-    "location": "Ōmiya, Saitama",
-    "region": "kanto",
-    "type": "Sohonsha",
-    "address": "",
+    "kanji": "武蔵一宮 氷川神社",
     "deities": [
       {
-        "name": "Susanoo",
-        "kanji": "",
-        "domain": "God of Storms, Sea & heroic valor"
+        "name": "Susanoo no Mikoto",
+        "kanji": "須佐之男命",
+        "domain": "God of Storms, Seas & Purification; Slayer of evil and patron of martial valor",
+        "title": null,
+        "deity_type": "origin"
+      },
+      {
+        "name": "Inadahime no Mikoto",
+        "kanji": "稲田姫命",
+        "domain": "Goddess of Rice Fields, Abundance & Feminine Grace; Divine consort of Susanoo",
+        "title": null,
+        "deity_type": "origin"
+      },
+      {
+        "name": "Ōnamuji no Mikoto",
+        "kanji": "大己貴命",
+        "domain": "God of Nation-Building, Medicine & Earthly Prosperity; Divine son of Susanoo and Inadahime",
+        "title": null,
+        "deity_type": "origin"
       }
-    ]
+    ],
+    "location": "Saitama, Saitama",
+    "region": "Kanto",
+    "type": "Chokusaisha",
+    "category": ["Victory", "Protection", "Purification", "Love", "Marriage", "Harvest", "Business"],
+    "shrine_notes": "Also designated Ichinomiya of Musashi Province (武蔵国一宮); Sohonsha of approximately 280 Hikawa shrines across Saitama, Tokyo, and Kanagawa; listed as Myōjin Taisha (名神大社) in the Engishiki (927 CE); formerly ranked Kanpei Taisha (官幣大社) under the Meiji social ranking system. One of only 16 Chokusaisha nationwide. The city name Ōmiya (大宮) — meaning 'Great Shrine' — derives directly from this shrine.",
+    "address": "1-407 Takanahachō, Ōmiya-ku, Saitama-shi, Saitama-ken 330-0803"
   },
   {
     "id": 7,
     "shrine": "Susa Shrine",
-    "location": "Izumo, Shimane",
-    "region": "chugoku",
-    "type": "Major",
-    "address": "",
+    "kanji": "須佐神社",
     "deities": [
       {
-        "name": "Susanoo",
-        "kanji": "",
-        "domain": "God of Storms, Sea & heroic valor"
+        "name": "Susanoo no Mikoto",
+        "kanji": "須佐之男命",
+        "domain": "God of Storms, Seas & Purification; Slayer of Yamata no Orochi and pioneer of the land",
+        "title": null,
+        "deity_type": "origin"
+      },
+      {
+        "name": "Inadahime no Mikoto",
+        "kanji": "稲田比売命",
+        "domain": "Goddess of Rice Fields & Feminine Grace; Divine consort of Susanoo",
+        "title": null,
+        "deity_type": "origin"
+      },
+      {
+        "name": "Ashinazuchi no Mikoto",
+        "kanji": "足摩槌命",
+        "domain": "God of earthly protection; Father of Inadahime and divine ancestor of the Susa priestly lineage",
+        "title": null,
+        "deity_type": "origin"
+      },
+      {
+        "name": "Tenazuchi no Mikoto",
+        "kanji": "手摩槌命",
+        "domain": "Goddess of earthly nurturing; Mother of Inadahime",
+        "title": null,
+        "deity_type": "origin"
       }
-    ]
+    ],
+    "location": "Izumo, Shimane",
+    "region": "Chugoku",
+    "type": "Beppyo-sha",
+    "category": ["Love", "Marriage", "Fertility", "Childbirth", "Purification", "Warding", "Health"],
+    "shrine_notes": "The only shrine in all of Japan enshrining Susanoo no Mikoto's actual divine soul (御魂, mitama) rather than a divided spirit (分霊, wakemitama). Listed in the Engishiki Jinmyōchō (延喜式神名帳, 927 CE). Formerly ranked Kokuhei Shōsha (国幣小社). Designated Izumo Koku Shinbutsu Reijō No. 18 (出雲國神仏霊場第十八番). The Reiwa Grand Shrine Renovation (令和の御遷宮) commenced April 2025.",
+    "address": "730 Susa, Sada-chō, Izumo-shi, Shimane-ken 693-0503"
   },
   {
     "id": 8,
     "shrine": "Izumo Taisha (Izumo Ōyashiro)",
-    "location": "Taisha, Shimane",
-    "region": "chugoku",
-    "type": "Sohonsha",
-    "address": "",
+    "kanji": "出雲大社（いづもおおやしろ）",
     "deities": [
       {
-        "name": "Ōkuninushi",
-        "kanji": "",
-        "domain": "God of nation-building, medicine, marriage & relationships"
+        "name": "Ōkuninushi no Ōkami",
+        "kanji": "大国主大神",
+        "domain": "God of Nation-Building, Medicine, Agriculture & All Bonds; Supreme sovereign of the invisible world and master of musubi — the divine force that binds all living things",
+        "title": null,
+        "deity_type": "origin"
       }
-    ]
+    ],
+    "location": "Izumo, Shimane",
+    "region": "Chugoku",
+    "type": "Chokusaisha",
+    "category": ["Love", "Marriage", "Business", "Prosperity", "Health", "Harvest", "National Protection"],
+    "shrine_notes": "Ichinomiya of Izumo Province (出雲国一之宮). Head shrine of the Izumo Taisha-kyō (出雲大社教) religious organization — one of very few shrines operating simultaneously under its own religious body and the Jinja Honchō. Formerly ranked Kanpei Taisha (官幣大社) — the highest rank in the Meiji shrine system. The main hall (御本殿) is a National Treasure (国宝). Correct formal reading is 'Izumo Ōyashiro' (いづもおおやしろ), not 'Izumo Taisha.' Uses unique worship etiquette of 2 bows, 4 claps, 1 bow (二礼四拍手一礼) unlike the standard 2-2-1 used at most shrines.",
+    "address": "195 Kizuki-higashi, Taisha-chō, Izumo-shi, Shimane-ken 699-0701"
   },
   {
     "id": 9,
     "shrine": "Ōmiwa Shrine (Miwa Shrine)",
-    "location": "Sakurai, Nara",
-    "region": "kansai",
-    "type": "Sohonsha",
-    "address": "",
+    "kanji": "大神神社（三輪明神）",
     "deities": [
       {
-        "name": "Ōkuninushi / Ōmononushi",
-        "kanji": "",
-        "domain": "God of nation-building, medicine & healing"
+        "name": "Ōmononushi no Ōkami",
+        "kanji": "大物主大神",
+        "domain": "God of Nation-Building, Medicine, Agriculture, Brewing & Purification; Divine guardian of the Yamato land and sovereign of the sacred mountain Miwa",
+        "title": null,
+        "deity_type": "origin"
+      },
+      {
+        "name": "Ōnamuji no Kami",
+        "kanji": "大己貴神",
+        "domain": "God of Nation-Building & Earthly Prosperity; Co-builder of the land alongside Sukunabikona",
+        "title": null,
+        "deity_type": "origin"
+      },
+      {
+        "name": "Sukunabikona no Kami",
+        "kanji": "少彦名神",
+        "domain": "God of Medicine, Brewing & Agriculture; Divine partner of Ōnamuji in the building of the land",
+        "title": null,
+        "deity_type": "origin"
       }
-    ]
+    ],
+    "location": "Sakurai, Nara",
+    "region": "Kansai",
+    "type": "Sohonsha",
+    "category": ["Health", "Purification", "Warding", "Harvest", "Business", "Prosperity", "Love", "Marriage"],
+    "shrine_notes": "Ichinomiya of Yamato Province (大和国一之宮). One of the Nijūnisha (二十二社), the 22 shrines specially designated by the Heian imperial court to receive offerings during national crises — ranked Chūshichisha (中七社, middle seven). Listed as Myōjin Taisha (名神大社) in the Engishiki (927 CE). Formerly ranked Kanpei Taisha (官幣大社) — the highest rank under the Meiji shrine system. Has no main hall (本殿) — Mt. Miwa (三輪山) itself is the divine body (御神体). The Mitsutorii (三ツ鳥居, triple torii) inside the precinct is a National Important Cultural Property. Origin shrine of all Miwa/Ōmononushi shrines across Japan.",
+    "address": "1422 Miwa, Sakurai-shi, Nara-ken 633-8538"
   },
   {
     "id": 10,
