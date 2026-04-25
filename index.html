@@ -82,6 +82,19 @@
     <div id="detail-content"></div>
 </aside>
 
+<div id="map-modal" class="map-modal" onclick="closeMapModal(event)" aria-hidden="true">
+    <div class="map-modal-content">
+        <div class="map-modal-header">
+            <div class="map-modal-info">
+                <span class="map-modal-title" id="map-modal-title"></span>
+                <span class="map-modal-address" id="map-modal-address"></span>
+            </div>
+            <button class="map-modal-close" onclick="closeMapModal()" aria-label="Close map">&#x2715;</button>
+        </div>
+        <iframe id="big-map" frameborder="0" allowfullscreen></iframe>
+    </div>
+</div>
+
 <footer>
     <div class="disclaimer">
         <strong>Disclaimer:</strong> The information on this page has been researched and compiled with the assistance of an AI. While every effort has been made to ensure accuracy, AI can make mistakes. Please verify important details through official shrine sources before visiting.

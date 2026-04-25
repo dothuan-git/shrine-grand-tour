@@ -4,6 +4,7 @@ let detailMap = {};
 let filteredCache = [];
 let openShrineName = null;
 let isFirstRender = true;
+let miniMapObserver = null;
 
 const DEITY_TYPE_LABEL = {
     origin: 'Origin',
@@ -74,7 +75,15 @@ Promise.all([
     document.getElementById('results-list').innerHTML = '<div style="padding: 2rem; color: red;">Failed to load data. Make sure you\'re running this via a local server (VS Code Live Server or npx serve), not directly via file://</div>';
 });
 
-document.addEventListener('keydown', e => { if (e.key === 'Escape') closePanel(); });
+document.addEventListener('keydown', e => {
+    if (e.key !== 'Escape') return;
+    const mapModal = document.getElementById('map-modal');
+    if (mapModal && mapModal.classList.contains('visible')) {
+        closeMapModal();
+    } else {
+        closePanel();
+    }
+});
 
 function updatePrefectures() {
     const region = document.getElementById('rf').value;
@@ -193,6 +202,18 @@ function render() {
                 <span class="location">${highlight(r.location, query)}</span>
                 <div><span class="region-tag">${r.region}</span></div>
 ${hiddenMatch ? `<span class="match-badge">+ details match</span>` : ''}
+                ${(() => {
+                    const q = r.address
+                        ? `${r.shrine} ${r.address}`
+                        : `${r.kanji || r.shrine} ${r.location || ''}`.trim();
+                    if (!q) return '';
+                    const qEnc = encodeURIComponent(q);
+                    const qAttr = q.replace(/"/g, '&quot;');
+                    const sAttr = r.shrine.replace(/"/g, '&quot;');
+                    const addr = r.address || r.location || '';
+                    const aAttr = addr.replace(/"/g, '&quot;');
+                    return `<div class="mini-map" data-q="${qAttr}" data-shrine="${sAttr}" data-address="${aAttr}" title="Click to expand map"><iframe class="mini-map-frame" data-src="https://www.google.com/maps?q=${qEnc}&z=14&output=embed" loading="lazy" tabindex="-1"></iframe></div>`;
+                })()}
             </div>
 
             <div class="prayer-col">
@@ -212,6 +233,47 @@ ${hiddenMatch ? `<span class="match-badge">+ details match</span>` : ''}
         container.style.opacity = '1';
     });
     isFirstRender = false;
+    setupMiniMaps();
+}
+
+function setupMiniMaps() {
+    if (miniMapObserver) miniMapObserver.disconnect();
+    miniMapObserver = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting && !entry.target.dataset.initialized) {
+                const frame = entry.target.querySelector('.mini-map-frame');
+                if (frame && frame.dataset.src) frame.src = frame.dataset.src;
+                entry.target.dataset.initialized = '1';
+                miniMapObserver.unobserve(entry.target);
+            }
+        });
+    }, { rootMargin: '200px' });
+
+    document.querySelectorAll('.mini-map').forEach(el => {
+        el.addEventListener('click', e => {
+            e.stopPropagation();
+            openMapModal(el.dataset.q, el.dataset.shrine, el.dataset.address);
+        });
+        miniMapObserver.observe(el);
+    });
+}
+
+function openMapModal(query, shrineName, address) {
+    document.getElementById('map-modal-title').textContent = shrineName;
+    document.getElementById('map-modal-address').textContent = address || '';
+    const modal = document.getElementById('map-modal');
+    modal.classList.add('visible');
+    modal.setAttribute('aria-hidden', 'false');
+    document.getElementById('big-map').src =
+        `https://www.google.com/maps?q=${encodeURIComponent(query)}&z=16&output=embed`;
+}
+
+function closeMapModal(e) {
+    if (e && e.target && e.target.id !== 'map-modal') return;
+    const modal = document.getElementById('map-modal');
+    modal.classList.remove('visible');
+    modal.setAttribute('aria-hidden', 'true');
+    document.getElementById('big-map').src = 'about:blank';
 }
 
 function buildDeitiesHTML(deities, query) {
