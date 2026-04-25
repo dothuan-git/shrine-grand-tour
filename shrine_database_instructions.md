@@ -217,4 +217,4 @@ Produced **on request only**.
 6. **`domain` is portfolio only.** No narrative, no relational descriptions.
 7. **`title` is human identity only.** Null for all primordial/origin deities.
 8. **`best_time_to_visit.events` is short and concise.** Detailed festival content lives in `shrine_event`.
-9. **`shrine_event` narrative fields are full prose.** Not summaries. Storytelling voice throughout.
+9. **`shrine_event`, `shrine_detail` narrative fields are full prose.** Not summaries. Storytelling voice throughout.

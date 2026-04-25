@@ -261,17 +261,29 @@
   {
     "id": 10,
     "shrine": "Kotohira-gū (Konpira-san)",
-    "location": "Kotohira, Kagawa",
-    "region": "shikoku",
-    "type": "Major",
-    "address": "",
+    "kanji": "金刀比羅宮（金毘羅大権現）",
     "deities": [
       {
-        "name": "Ōkuninushi",
-        "kanji": "",
-        "domain": "God of nation-building, medicine & relationships"
+        "name": "Ōmononushi no Kami",
+        "kanji": "大物主神",
+        "domain": "God of Nation-Building, Agriculture, Medicine, Brewing & Maritime Protection; sovereign of the sea and guardian of all who travel upon water",
+        "title": null,
+        "deity_type": "origin"
+      },
+      {
+        "name": "Emperor Sutoku",
+        "kanji": "崇徳天皇",
+        "domain": "Deified sovereign; pacified spirit of the exiled emperor who died in Sanuki; guardian of those who suffer unjust misfortune",
+        "title": "Emperor Sutoku (崇徳天皇)",
+        "deity_type": "deified human"
       }
-    ]
+    ],
+    "location": "Kotohira, Kagawa",
+    "region": "Shikoku",
+    "type": "Chokusaisha",
+    "category": ["Seafaring", "Travel", "Protection", "Health", "Business", "Prosperity", "Harvest"],
+    "shrine_notes": "Sohonsha of approximately 600 Kotohira shrines (金刀比羅神社・琴平神社) across Japan. Head shrine of Kotohira Honkyō (金刀比羅本教), an independent religious organization. Withdrew from the Jinja Honchō in 2020 and currently operates as an independent shrine (単立神社) — the only shrine of this status in our database. Chokusaisha designation was granted by imperial decree on September 13, 1868 and has not been formally revoked. Formerly ranked Kokuhei Chūsha (国幣中社) under the Meiji shrine system. The Omote Shoin (表書院) and its four-legged gate are designated National Important Cultural Properties, containing fusuma paintings by Maruyama Ōkyo and Itō Jakuchū.",
+    "address": "892-1 Kotohira-chō, Nakatado-gun, Kagawa-ken 766-8501"
   },
   {
     "id": 11,
